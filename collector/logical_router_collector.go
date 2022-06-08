@@ -1,7 +1,7 @@
 package collector
 
 import (
-	"nsxt_exporter/client"
+	"nsx_exporter/client"
 	"strings"
 
 	"github.com/go-kit/kit/log"

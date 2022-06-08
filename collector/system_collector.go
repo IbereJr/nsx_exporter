@@ -1,7 +1,7 @@
 package collector
 
 import (
-	"nsxt_exporter/client"
+	"nsx_exporter/client"
 	"strings"
 
 	"github.com/go-kit/kit/log"
@@ -324,6 +324,7 @@ func (sc *systemCollector) collectServiceStatusMetrics() (serviceStatusMetrics [
 
 	for _, collectServiceStatusMetric := range collectors {
 		m, err := collectServiceStatusMetric()
+                level.Error(sc.logger).Log("msg", "Coletando", m.Name)
 		if err != nil {
 			level.Error(sc.logger).Log("msg", "Unable to collect system service status", "name", m.Name, "error", err.Error())
 			continue

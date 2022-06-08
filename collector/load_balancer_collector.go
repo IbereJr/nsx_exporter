@@ -3,7 +3,7 @@ package collector
 import (
 	"strings"
 
-	"nsxt_exporter/client"
+	"nsx_exporter/client"
 
 	"github.com/go-kit/kit/log"
 	"github.com/go-kit/kit/log/level"

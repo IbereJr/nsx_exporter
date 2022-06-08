@@ -1,2 +1,0 @@
-## master / unreleased
-Init project

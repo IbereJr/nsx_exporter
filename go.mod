@@ -1,4 +1,4 @@
-module nsxt_exporter
+module nsx_exporter
 
 go 1.13
 

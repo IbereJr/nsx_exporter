@@ -7,7 +7,7 @@ GOFMT?=$(GO) fmt
 GOOS?=$(shell $(GO) env GOHOSTOS)
 GOARCH?=$(shell $(GO) env GOHOSTARCH)
 
-DOCKER_IMAGE_NAME?=nsxt-exporter
+DOCKER_IMAGE_NAME?=nsx-exporter
 DOCKER_IMAGE_TAG?=$(shell git rev-parse --short HEAD)
 DOCKERFILE_PATH?=./Dockerfile
 DOCKERBUILD_CONTEXT?=./
@@ -27,7 +27,7 @@ endif
 .PHONY: build
 build:
 	mkdir -p .build/${GOOS}-${GOARCH}
-	$(ENVVAR) GOOS=$(GOOS) go build -o .build/${GOOS}-${GOARCH}/nsxt_exporter ${LDFLAGS_FLAG}
+	$(ENVVAR) GOOS=$(GOOS) go build -o .build/${GOOS}-${GOARCH}/nsx_exporter ${LDFLAGS_FLAG}
 
 .PHONY: test
 test:

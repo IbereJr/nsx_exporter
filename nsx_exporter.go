@@ -2,8 +2,9 @@ package main
 
 import (
 	"net/http"
-	"nsxt_exporter/collector"
+	"nsx_exporter/collector"
 	"os"
+        "fmt"
 
 	"github.com/go-kit/kit/log/level"
 	"github.com/prometheus/client_golang/prometheus"
@@ -27,26 +28,27 @@ func newNSXTClient(opts nsxtOpts) (*nsxt.APIClient, error) {
 		BasePath:           "/api/v1",
 		Host:               opts.host,
 		Scheme:             "https",
-		UserAgent:          "nsxt_exporter/1.0",
+		UserAgent:          "nsx_exporter/1.0",
 		ClientAuthCertFile: "",
 		RemoteAuth:         false,
 		UserName:           opts.username,
 		Password:           opts.password,
 		Insecure:           opts.insecure,
 	}
+        fmt.Println("%T", cfg)
 	return nsxt.NewAPIClient(&cfg)
 }
 
 func main() {
 	var (
-		listenAddress = kingpin.Flag("web.listen-address", "Address to listen on for web interface and telemetry.").Default(":9744").String()
-		metricsPath   = kingpin.Flag("web.telemetry-path", "Path under which to expose metrics.").Default("/metrics").String()
+		listenAddress = kingpin.Flag("listen", "Address to listen on for web interface and telemetry.").OverrideDefaultFromEnvar("NSX_LISTEN").Default(":9744").String()
+		metricsPath   = kingpin.Flag("path", "Path under which to expose metrics.").Default("/metrics").String()
 		opts          = nsxtOpts{}
 	)
-	kingpin.Flag("nsxt.host", "URI of NSX-T manager.").Default("localhost").StringVar(&opts.host)
-	kingpin.Flag("nsxt.username", "The username to connect to the NSX-T manager as.").StringVar(&opts.username)
-	kingpin.Flag("nsxt.password", "The password for the NSX-T manager user.").StringVar(&opts.password)
-	kingpin.Flag("nsxt.insecure", "Disable TLS host verification.").Default("true").BoolVar(&opts.insecure)
+	kingpin.Flag("host", "URI of NSX-T manager").OverrideDefaultFromEnvar("NSX_HOST").Default("localhost").StringVar(&opts.host)
+	kingpin.Flag("username", "The username to connect to the NSX-T manager").OverrideDefaultFromEnvar("NSX_USERNAME").StringVar(&opts.username)
+	kingpin.Flag("password", "The password for the NSX-T manager user").OverrideDefaultFromEnvar("NSX_PASSWORD").StringVar(&opts.password)
+	kingpin.Flag("insecure", "Disable TLS host verification").Default("true").BoolVar(&opts.insecure)
 
 	promlogConfig := &promlog.Config{}
 	flag.AddFlags(kingpin.CommandLine, promlogConfig)
@@ -54,7 +56,7 @@ func main() {
 	kingpin.Parse()
 	logger := promlog.New(promlogConfig)
 
-	level.Info(logger).Log("msg", "Starting nsxt_exporter", "version", version.Info())
+	level.Info(logger).Log("msg", "Starting nsx_exporter", "version", version.Info())
 	level.Info(logger).Log("msg", "Build context", "context", version.BuildContext())
 
 	nsxtClient, err := newNSXTClient(opts)
@@ -65,7 +67,7 @@ func main() {
 
 	collector := collector.NewNSXTCollector(nsxtClient, logger)
 	prometheus.MustRegister(collector)
-	prometheus.MustRegister(version.NewCollector("nsxt_exporter"))
+	prometheus.MustRegister(version.NewCollector("nsx_exporter"))
 
 	level.Info(logger).Log("msg", "Listening on address", "address", *listenAddress)
 	http.Handle(*metricsPath, promhttp.Handler())
@@ -73,8 +75,8 @@ func main() {
 		w.Write([]byte(`<html>
 		<head><title>NSX-T Exporter</title></head>
 		<body>
-		<h1>NSX-T Exporter</h1>
-		<p><a href="` + *metricsPath + `"></p>
+		<h1>NSX Exporter</h1>
+		<p>URL=<a href="` + *metricsPath + `">`+ *metricsPath +`</a></p>
 		</body>
 		</html>`))
 	})
