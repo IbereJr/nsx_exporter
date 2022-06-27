@@ -7,7 +7,9 @@ COPY go.sum ./
 COPY client ./
 COPY collector ./
 
+ENV GOROOT /app
 RUN go mod download
+
 COPY *.go ./
 
 RUN go build -o /nsx-exporter
