@@ -1,0 +1,13 @@
+version: "2"
+
+services:
+  nsx-exporter:
+    expose:
+      - 9191
+    ports:
+      - 9191:9191
+    image: nsx-exporter:latest 
+    environment:
+      - NSX_HOST=10.1.255.39
+      - NSX_USERNAME=tools
+      - NSX_PASSWORD='T1v1t@202200'

@@ -4,6 +4,7 @@ import (
 	"net/http"
 	"nsx_exporter/collector"
 	"os"
+	"encoding/json"
         "fmt"
 
 	"github.com/go-kit/kit/log/level"
@@ -22,6 +23,12 @@ type nsxtOpts struct {
 	password string
 	insecure bool
 }
+
+func dump(data interface{}){
+    b,_:=json.MarshalIndent(data, "", "  ")
+    fmt.Print(string(b))
+}
+
 
 func newNSXTClient(opts nsxtOpts) (*nsxt.APIClient, error) {
 	cfg := nsxt.Configuration{
@@ -58,6 +65,8 @@ func main() {
 
 	level.Info(logger).Log("msg", "Starting nsx_exporter", "version", version.Info())
 	level.Info(logger).Log("msg", "Build context", "context", version.BuildContext())
+
+	level.Info(logger).Log("msg", "options", opts)
 
 	nsxtClient, err := newNSXTClient(opts)
 	if err != nil {

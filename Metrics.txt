@@ -1,0 +1,722 @@
+# HELP go_gc_duration_seconds A summary of the pause duration of garbage collection cycles.
+# TYPE go_gc_duration_seconds summary
+go_gc_duration_seconds{quantile="0"} 2.3218e-05
+go_gc_duration_seconds{quantile="0.25"} 2.5367e-05
+go_gc_duration_seconds{quantile="0.5"} 2.7905e-05
+go_gc_duration_seconds{quantile="0.75"} 3.1344e-05
+go_gc_duration_seconds{quantile="1"} 0.000157697
+go_gc_duration_seconds_sum 0.000615682
+go_gc_duration_seconds_count 16
+# HELP go_goroutines Number of goroutines that currently exist.
+# TYPE go_goroutines gauge
+go_goroutines 9
+# HELP go_info Information about the Go environment.
+# TYPE go_info gauge
+go_info{version="go1.13.8"} 1
+# HELP go_memstats_alloc_bytes Number of bytes allocated and still in use.
+# TYPE go_memstats_alloc_bytes gauge
+go_memstats_alloc_bytes 1.915616e+06
+# HELP go_memstats_alloc_bytes_total Total number of bytes allocated, even if freed.
+# TYPE go_memstats_alloc_bytes_total counter
+go_memstats_alloc_bytes_total 2.8144176e+07
+# HELP go_memstats_buck_hash_sys_bytes Number of bytes used by the profiling bucket hash table.
+# TYPE go_memstats_buck_hash_sys_bytes gauge
+go_memstats_buck_hash_sys_bytes 1.452118e+06
+# HELP go_memstats_frees_total Total number of frees.
+# TYPE go_memstats_frees_total counter
+go_memstats_frees_total 197072
+# HELP go_memstats_gc_cpu_fraction The fraction of this program's available CPU time used by the GC since the program started.
+# TYPE go_memstats_gc_cpu_fraction gauge
+go_memstats_gc_cpu_fraction 4.326117039264293e-05
+# HELP go_memstats_gc_sys_bytes Number of bytes used for garbage collection system metadata.
+# TYPE go_memstats_gc_sys_bytes gauge
+go_memstats_gc_sys_bytes 2.476032e+06
+# HELP go_memstats_heap_alloc_bytes Number of heap bytes allocated and still in use.
+# TYPE go_memstats_heap_alloc_bytes gauge
+go_memstats_heap_alloc_bytes 1.915616e+06
+# HELP go_memstats_heap_idle_bytes Number of heap bytes waiting to be used.
+# TYPE go_memstats_heap_idle_bytes gauge
+go_memstats_heap_idle_bytes 6.1874176e+07
+# HELP go_memstats_heap_inuse_bytes Number of heap bytes that are in use.
+# TYPE go_memstats_heap_inuse_bytes gauge
+go_memstats_heap_inuse_bytes 3.858432e+06
+# HELP go_memstats_heap_objects Number of allocated objects.
+# TYPE go_memstats_heap_objects gauge
+go_memstats_heap_objects 19116
+# HELP go_memstats_heap_released_bytes Number of heap bytes released to OS.
+# TYPE go_memstats_heap_released_bytes gauge
+go_memstats_heap_released_bytes 6.0325888e+07
+# HELP go_memstats_heap_sys_bytes Number of heap bytes obtained from system.
+# TYPE go_memstats_heap_sys_bytes gauge
+go_memstats_heap_sys_bytes 6.5732608e+07
+# HELP go_memstats_last_gc_time_seconds Number of seconds since 1970 of last garbage collection.
+# TYPE go_memstats_last_gc_time_seconds gauge
+go_memstats_last_gc_time_seconds 1.6560838951167772e+09
+# HELP go_memstats_lookups_total Total number of pointer lookups.
+# TYPE go_memstats_lookups_total counter
+go_memstats_lookups_total 0
+# HELP go_memstats_mallocs_total Total number of mallocs.
+# TYPE go_memstats_mallocs_total counter
+go_memstats_mallocs_total 216188
+# HELP go_memstats_mcache_inuse_bytes Number of bytes in use by mcache structures.
+# TYPE go_memstats_mcache_inuse_bytes gauge
+go_memstats_mcache_inuse_bytes 27776
+# HELP go_memstats_mcache_sys_bytes Number of bytes used for mcache structures obtained from system.
+# TYPE go_memstats_mcache_sys_bytes gauge
+go_memstats_mcache_sys_bytes 32768
+# HELP go_memstats_mspan_inuse_bytes Number of bytes in use by mspan structures.
+# TYPE go_memstats_mspan_inuse_bytes gauge
+go_memstats_mspan_inuse_bytes 66776
+# HELP go_memstats_mspan_sys_bytes Number of bytes used for mspan structures obtained from system.
+# TYPE go_memstats_mspan_sys_bytes gauge
+go_memstats_mspan_sys_bytes 81920
+# HELP go_memstats_next_gc_bytes Number of heap bytes when next garbage collection will take place.
+# TYPE go_memstats_next_gc_bytes gauge
+go_memstats_next_gc_bytes 4.194304e+06
+# HELP go_memstats_other_sys_bytes Number of bytes used for other system allocations.
+# TYPE go_memstats_other_sys_bytes gauge
+go_memstats_other_sys_bytes 2.805922e+06
+# HELP go_memstats_stack_inuse_bytes Number of bytes in use by the stack allocator.
+# TYPE go_memstats_stack_inuse_bytes gauge
+go_memstats_stack_inuse_bytes 1.277952e+06
+# HELP go_memstats_stack_sys_bytes Number of bytes obtained from system for stack allocator.
+# TYPE go_memstats_stack_sys_bytes gauge
+go_memstats_stack_sys_bytes 1.277952e+06
+# HELP go_memstats_sys_bytes Number of bytes obtained from system.
+# TYPE go_memstats_sys_bytes gauge
+go_memstats_sys_bytes 7.385932e+07
+# HELP go_threads Number of OS threads created.
+# TYPE go_threads gauge
+go_threads 17
+# HELP nsx_exporter_build_info A metric with a constant '1' value labeled by version, revision, branch, and goversion from which nsx_exporter was built.
+# TYPE nsx_exporter_build_info gauge
+nsx_exporter_build_info{branch="",goversion="go1.13.8",revision="",version=""} 1
+# HELP nsxt_cluster_node_cpu_total_cores NSX-T system cluster nodes cpu cores total
+# TYPE nsxt_cluster_node_cpu_total_cores gauge
+nsxt_cluster_node_cpu_total_cores{ip_address="10.1.255.37",type="management"} 6
+nsxt_cluster_node_cpu_total_cores{ip_address="10.1.255.38",type="management"} 6
+nsxt_cluster_node_cpu_total_cores{ip_address="10.1.255.39",type="management"} 6
+# HELP nsxt_cluster_node_cpu_use_cores NSX-T system cluster node average load
+# TYPE nsxt_cluster_node_cpu_use_cores gauge
+nsxt_cluster_node_cpu_use_cores{ip_address="10.1.255.37",minutes="1",type="management"} 3.190000057220459
+nsxt_cluster_node_cpu_use_cores{ip_address="10.1.255.37",minutes="15",type="management"} 3.7200000286102295
+nsxt_cluster_node_cpu_use_cores{ip_address="10.1.255.37",minutes="5",type="management"} 3.7200000286102295
+nsxt_cluster_node_cpu_use_cores{ip_address="10.1.255.38",minutes="1",type="management"} 4.139999866485596
+nsxt_cluster_node_cpu_use_cores{ip_address="10.1.255.38",minutes="15",type="management"} 3.950000047683716
+nsxt_cluster_node_cpu_use_cores{ip_address="10.1.255.38",minutes="5",type="management"} 3.990000009536743
+nsxt_cluster_node_cpu_use_cores{ip_address="10.1.255.39",minutes="1",type="management"} 2.3499999046325684
+nsxt_cluster_node_cpu_use_cores{ip_address="10.1.255.39",minutes="15",type="management"} 1.840000033378601
+nsxt_cluster_node_cpu_use_cores{ip_address="10.1.255.39",minutes="5",type="management"} 1.9299999475479126
+# HELP nsxt_cluster_node_disk_total_kilobytes NSX-T system cluster node disk total
+# TYPE nsxt_cluster_node_disk_total_kilobytes gauge
+nsxt_cluster_node_disk_total_kilobytes{filesystem="/",ip_address="10.1.255.37",type="management"} 1.0684528e+07
+nsxt_cluster_node_disk_total_kilobytes{filesystem="/",ip_address="10.1.255.38",type="management"} 1.0684528e+07
+nsxt_cluster_node_disk_total_kilobytes{filesystem="/",ip_address="10.1.255.39",type="management"} 1.0684528e+07
+nsxt_cluster_node_disk_total_kilobytes{filesystem="/boot",ip_address="10.1.255.37",type="management"} 966264
+nsxt_cluster_node_disk_total_kilobytes{filesystem="/boot",ip_address="10.1.255.38",type="management"} 966264
+nsxt_cluster_node_disk_total_kilobytes{filesystem="/boot",ip_address="10.1.255.39",type="management"} 966264
+nsxt_cluster_node_disk_total_kilobytes{filesystem="/config",ip_address="10.1.255.37",type="management"} 3.0348768e+07
+nsxt_cluster_node_disk_total_kilobytes{filesystem="/config",ip_address="10.1.255.38",type="management"} 3.0348768e+07
+nsxt_cluster_node_disk_total_kilobytes{filesystem="/config",ip_address="10.1.255.39",type="management"} 3.0348768e+07
+nsxt_cluster_node_disk_total_kilobytes{filesystem="/dev",ip_address="10.1.255.37",type="management"} 1.2320704e+07
+nsxt_cluster_node_disk_total_kilobytes{filesystem="/dev",ip_address="10.1.255.38",type="management"} 1.2320704e+07
+nsxt_cluster_node_disk_total_kilobytes{filesystem="/dev",ip_address="10.1.255.39",type="management"} 1.2320704e+07
+nsxt_cluster_node_disk_total_kilobytes{filesystem="/dev/shm",ip_address="10.1.255.37",type="management"} 1.2337056e+07
+nsxt_cluster_node_disk_total_kilobytes{filesystem="/dev/shm",ip_address="10.1.255.38",type="management"} 1.2337056e+07
+nsxt_cluster_node_disk_total_kilobytes{filesystem="/dev/shm",ip_address="10.1.255.39",type="management"} 1.2337056e+07
+nsxt_cluster_node_disk_total_kilobytes{filesystem="/image",ip_address="10.1.255.37",type="management"} 4.4113328e+07
+nsxt_cluster_node_disk_total_kilobytes{filesystem="/image",ip_address="10.1.255.38",type="management"} 4.4113328e+07
+nsxt_cluster_node_disk_total_kilobytes{filesystem="/image",ip_address="10.1.255.39",type="management"} 4.4113328e+07
+nsxt_cluster_node_disk_total_kilobytes{filesystem="/nonconfig",ip_address="10.1.255.37",type="management"} 1.03077152e+08
+nsxt_cluster_node_disk_total_kilobytes{filesystem="/nonconfig",ip_address="10.1.255.38",type="management"} 1.03077152e+08
+nsxt_cluster_node_disk_total_kilobytes{filesystem="/nonconfig",ip_address="10.1.255.39",type="management"} 1.03077152e+08
+nsxt_cluster_node_disk_total_kilobytes{filesystem="/repository",ip_address="10.1.255.37",type="management"} 3.2313776e+07
+nsxt_cluster_node_disk_total_kilobytes{filesystem="/repository",ip_address="10.1.255.38",type="management"} 3.2313776e+07
+nsxt_cluster_node_disk_total_kilobytes{filesystem="/repository",ip_address="10.1.255.39",type="management"} 3.2313776e+07
+nsxt_cluster_node_disk_total_kilobytes{filesystem="/run",ip_address="10.1.255.37",type="management"} 2.467412e+06
+nsxt_cluster_node_disk_total_kilobytes{filesystem="/run",ip_address="10.1.255.38",type="management"} 2.467412e+06
+nsxt_cluster_node_disk_total_kilobytes{filesystem="/run",ip_address="10.1.255.39",type="management"} 2.467412e+06
+nsxt_cluster_node_disk_total_kilobytes{filesystem="/run/lock",ip_address="10.1.255.37",type="management"} 5120
+nsxt_cluster_node_disk_total_kilobytes{filesystem="/run/lock",ip_address="10.1.255.38",type="management"} 5120
+nsxt_cluster_node_disk_total_kilobytes{filesystem="/run/lock",ip_address="10.1.255.39",type="management"} 5120
+nsxt_cluster_node_disk_total_kilobytes{filesystem="/run/user/1007",ip_address="10.1.255.37",type="management"} 2.467408e+06
+nsxt_cluster_node_disk_total_kilobytes{filesystem="/run/user/1007",ip_address="10.1.255.38",type="management"} 2.467408e+06
+nsxt_cluster_node_disk_total_kilobytes{filesystem="/run/user/1007",ip_address="10.1.255.39",type="management"} 2.467408e+06
+nsxt_cluster_node_disk_total_kilobytes{filesystem="/sys/fs/cgroup",ip_address="10.1.255.37",type="management"} 1.2337056e+07
+nsxt_cluster_node_disk_total_kilobytes{filesystem="/sys/fs/cgroup",ip_address="10.1.255.38",type="management"} 1.2337056e+07
+nsxt_cluster_node_disk_total_kilobytes{filesystem="/sys/fs/cgroup",ip_address="10.1.255.39",type="management"} 1.2337056e+07
+nsxt_cluster_node_disk_total_kilobytes{filesystem="/tmp",ip_address="10.1.255.37",type="management"} 3.865136e+06
+nsxt_cluster_node_disk_total_kilobytes{filesystem="/tmp",ip_address="10.1.255.38",type="management"} 3.865136e+06
+nsxt_cluster_node_disk_total_kilobytes{filesystem="/tmp",ip_address="10.1.255.39",type="management"} 3.865136e+06
+nsxt_cluster_node_disk_total_kilobytes{filesystem="/var/dump",ip_address="10.1.255.37",type="management"} 9.69964e+06
+nsxt_cluster_node_disk_total_kilobytes{filesystem="/var/dump",ip_address="10.1.255.38",type="management"} 9.69964e+06
+nsxt_cluster_node_disk_total_kilobytes{filesystem="/var/dump",ip_address="10.1.255.39",type="management"} 9.69964e+06
+nsxt_cluster_node_disk_total_kilobytes{filesystem="/var/log",ip_address="10.1.255.37",type="management"} 2.8113564e+07
+nsxt_cluster_node_disk_total_kilobytes{filesystem="/var/log",ip_address="10.1.255.38",type="management"} 2.8113564e+07
+nsxt_cluster_node_disk_total_kilobytes{filesystem="/var/log",ip_address="10.1.255.39",type="management"} 2.8113564e+07
+# HELP nsxt_cluster_node_disk_use_kilobytes NSX-T system cluster node disk use
+# TYPE nsxt_cluster_node_disk_use_kilobytes gauge
+nsxt_cluster_node_disk_use_kilobytes{filesystem="/",ip_address="10.1.255.37",type="management"} 6.304896e+06
+nsxt_cluster_node_disk_use_kilobytes{filesystem="/",ip_address="10.1.255.38",type="management"} 6.333592e+06
+nsxt_cluster_node_disk_use_kilobytes{filesystem="/",ip_address="10.1.255.39",type="management"} 6.337936e+06
+nsxt_cluster_node_disk_use_kilobytes{filesystem="/boot",ip_address="10.1.255.37",type="management"} 8424
+nsxt_cluster_node_disk_use_kilobytes{filesystem="/boot",ip_address="10.1.255.38",type="management"} 8424
+nsxt_cluster_node_disk_use_kilobytes{filesystem="/boot",ip_address="10.1.255.39",type="management"} 8424
+nsxt_cluster_node_disk_use_kilobytes{filesystem="/config",ip_address="10.1.255.37",type="management"} 144660
+nsxt_cluster_node_disk_use_kilobytes{filesystem="/config",ip_address="10.1.255.38",type="management"} 144656
+nsxt_cluster_node_disk_use_kilobytes{filesystem="/config",ip_address="10.1.255.39",type="management"} 144768
+nsxt_cluster_node_disk_use_kilobytes{filesystem="/dev",ip_address="10.1.255.37",type="management"} 0
+nsxt_cluster_node_disk_use_kilobytes{filesystem="/dev",ip_address="10.1.255.38",type="management"} 0
+nsxt_cluster_node_disk_use_kilobytes{filesystem="/dev",ip_address="10.1.255.39",type="management"} 0
+nsxt_cluster_node_disk_use_kilobytes{filesystem="/dev/shm",ip_address="10.1.255.37",type="management"} 5680
+nsxt_cluster_node_disk_use_kilobytes{filesystem="/dev/shm",ip_address="10.1.255.38",type="management"} 6708
+nsxt_cluster_node_disk_use_kilobytes{filesystem="/dev/shm",ip_address="10.1.255.39",type="management"} 4608
+nsxt_cluster_node_disk_use_kilobytes{filesystem="/image",ip_address="10.1.255.37",type="management"} 2.907272e+06
+nsxt_cluster_node_disk_use_kilobytes{filesystem="/image",ip_address="10.1.255.38",type="management"} 65332
+nsxt_cluster_node_disk_use_kilobytes{filesystem="/image",ip_address="10.1.255.39",type="management"} 54356
+nsxt_cluster_node_disk_use_kilobytes{filesystem="/nonconfig",ip_address="10.1.255.37",type="management"} 1.693724e+06
+nsxt_cluster_node_disk_use_kilobytes{filesystem="/nonconfig",ip_address="10.1.255.38",type="management"} 1.884368e+06
+nsxt_cluster_node_disk_use_kilobytes{filesystem="/nonconfig",ip_address="10.1.255.39",type="management"} 1.6949e+06
+nsxt_cluster_node_disk_use_kilobytes{filesystem="/repository",ip_address="10.1.255.37",type="management"} 1.2883304e+07
+nsxt_cluster_node_disk_use_kilobytes{filesystem="/repository",ip_address="10.1.255.38",type="management"} 6.034192e+06
+nsxt_cluster_node_disk_use_kilobytes{filesystem="/repository",ip_address="10.1.255.39",type="management"} 6.034168e+06
+nsxt_cluster_node_disk_use_kilobytes{filesystem="/run",ip_address="10.1.255.37",type="management"} 6624
+nsxt_cluster_node_disk_use_kilobytes{filesystem="/run",ip_address="10.1.255.38",type="management"} 6624
+nsxt_cluster_node_disk_use_kilobytes{filesystem="/run",ip_address="10.1.255.39",type="management"} 6616
+nsxt_cluster_node_disk_use_kilobytes{filesystem="/run/lock",ip_address="10.1.255.37",type="management"} 0
+nsxt_cluster_node_disk_use_kilobytes{filesystem="/run/lock",ip_address="10.1.255.38",type="management"} 0
+nsxt_cluster_node_disk_use_kilobytes{filesystem="/run/lock",ip_address="10.1.255.39",type="management"} 0
+nsxt_cluster_node_disk_use_kilobytes{filesystem="/run/user/1007",ip_address="10.1.255.37",type="management"} 0
+nsxt_cluster_node_disk_use_kilobytes{filesystem="/run/user/1007",ip_address="10.1.255.38",type="management"} 0
+nsxt_cluster_node_disk_use_kilobytes{filesystem="/run/user/1007",ip_address="10.1.255.39",type="management"} 0
+nsxt_cluster_node_disk_use_kilobytes{filesystem="/sys/fs/cgroup",ip_address="10.1.255.37",type="management"} 0
+nsxt_cluster_node_disk_use_kilobytes{filesystem="/sys/fs/cgroup",ip_address="10.1.255.38",type="management"} 0
+nsxt_cluster_node_disk_use_kilobytes{filesystem="/sys/fs/cgroup",ip_address="10.1.255.39",type="management"} 0
+nsxt_cluster_node_disk_use_kilobytes{filesystem="/tmp",ip_address="10.1.255.37",type="management"} 15112
+nsxt_cluster_node_disk_use_kilobytes{filesystem="/tmp",ip_address="10.1.255.38",type="management"} 18116
+nsxt_cluster_node_disk_use_kilobytes{filesystem="/tmp",ip_address="10.1.255.39",type="management"} 14816
+nsxt_cluster_node_disk_use_kilobytes{filesystem="/var/dump",ip_address="10.1.255.37",type="management"} 21984
+nsxt_cluster_node_disk_use_kilobytes{filesystem="/var/dump",ip_address="10.1.255.38",type="management"} 901552
+nsxt_cluster_node_disk_use_kilobytes{filesystem="/var/dump",ip_address="10.1.255.39",type="management"} 21984
+nsxt_cluster_node_disk_use_kilobytes{filesystem="/var/log",ip_address="10.1.255.37",type="management"} 2.6777432e+07
+nsxt_cluster_node_disk_use_kilobytes{filesystem="/var/log",ip_address="10.1.255.38",type="management"} 1.1494356e+07
+nsxt_cluster_node_disk_use_kilobytes{filesystem="/var/log",ip_address="10.1.255.39",type="management"} 1.1000952e+07
+# HELP nsxt_cluster_node_memory_cached_kilobytes NSX-T system cluster node cached memory
+# TYPE nsxt_cluster_node_memory_cached_kilobytes gauge
+nsxt_cluster_node_memory_cached_kilobytes{ip_address="10.1.255.37",type="management"} 1.307256e+06
+nsxt_cluster_node_memory_cached_kilobytes{ip_address="10.1.255.38",type="management"} 1.46244e+06
+nsxt_cluster_node_memory_cached_kilobytes{ip_address="10.1.255.39",type="management"} 1.452588e+06
+# HELP nsxt_cluster_node_memory_total_kilobytes NSX-T system cluster node memory total
+# TYPE nsxt_cluster_node_memory_total_kilobytes gauge
+nsxt_cluster_node_memory_total_kilobytes{ip_address="10.1.255.37",type="management"} 2.4674116e+07
+nsxt_cluster_node_memory_total_kilobytes{ip_address="10.1.255.38",type="management"} 2.4674116e+07
+nsxt_cluster_node_memory_total_kilobytes{ip_address="10.1.255.39",type="management"} 2.4674116e+07
+# HELP nsxt_cluster_node_memory_use_kilobytes NSX-T system cluster node memory use
+# TYPE nsxt_cluster_node_memory_use_kilobytes gauge
+nsxt_cluster_node_memory_use_kilobytes{ip_address="10.1.255.37",type="management"} 2.006052e+07
+nsxt_cluster_node_memory_use_kilobytes{ip_address="10.1.255.38",type="management"} 1.9242712e+07
+nsxt_cluster_node_memory_use_kilobytes{ip_address="10.1.255.39",type="management"} 1.9702868e+07
+# HELP nsxt_cluster_node_status Status of NSX-T system cluster nodes
+# TYPE nsxt_cluster_node_status gauge
+nsxt_cluster_node_status{ip_address="10.1.255.37",status="CONNECTED",type="controller"} 1
+nsxt_cluster_node_status{ip_address="10.1.255.37",status="CONNECTED",type="management"} 1
+nsxt_cluster_node_status{ip_address="10.1.255.37",status="DISCONNECTED",type="controller"} 0
+nsxt_cluster_node_status{ip_address="10.1.255.37",status="DISCONNECTED",type="management"} 0
+nsxt_cluster_node_status{ip_address="10.1.255.37",status="UNKNOWN",type="controller"} 0
+nsxt_cluster_node_status{ip_address="10.1.255.37",status="UNKNOWN",type="management"} 0
+nsxt_cluster_node_status{ip_address="10.1.255.38",status="CONNECTED",type="controller"} 1
+nsxt_cluster_node_status{ip_address="10.1.255.38",status="CONNECTED",type="management"} 1
+nsxt_cluster_node_status{ip_address="10.1.255.38",status="DISCONNECTED",type="controller"} 0
+nsxt_cluster_node_status{ip_address="10.1.255.38",status="DISCONNECTED",type="management"} 0
+nsxt_cluster_node_status{ip_address="10.1.255.38",status="UNKNOWN",type="controller"} 0
+nsxt_cluster_node_status{ip_address="10.1.255.38",status="UNKNOWN",type="management"} 0
+nsxt_cluster_node_status{ip_address="10.1.255.39",status="CONNECTED",type="controller"} 1
+nsxt_cluster_node_status{ip_address="10.1.255.39",status="CONNECTED",type="management"} 1
+nsxt_cluster_node_status{ip_address="10.1.255.39",status="DISCONNECTED",type="controller"} 0
+nsxt_cluster_node_status{ip_address="10.1.255.39",status="DISCONNECTED",type="management"} 0
+nsxt_cluster_node_status{ip_address="10.1.255.39",status="UNKNOWN",type="controller"} 0
+nsxt_cluster_node_status{ip_address="10.1.255.39",status="UNKNOWN",type="management"} 0
+# HELP nsxt_cluster_node_swap_total_kilobytes NSX-T system cluster node swap total
+# TYPE nsxt_cluster_node_swap_total_kilobytes gauge
+nsxt_cluster_node_swap_total_kilobytes{ip_address="10.1.255.37",type="management"} 0
+nsxt_cluster_node_swap_total_kilobytes{ip_address="10.1.255.38",type="management"} 0
+nsxt_cluster_node_swap_total_kilobytes{ip_address="10.1.255.39",type="management"} 0
+# HELP nsxt_cluster_node_swap_use_kilobytes NSX-T system cluster node swap use
+# TYPE nsxt_cluster_node_swap_use_kilobytes gauge
+nsxt_cluster_node_swap_use_kilobytes{ip_address="10.1.255.37",type="management"} 0
+nsxt_cluster_node_swap_use_kilobytes{ip_address="10.1.255.38",type="management"} 0
+nsxt_cluster_node_swap_use_kilobytes{ip_address="10.1.255.39",type="management"} 0
+# HELP nsxt_cluster_status Status of NSX-T system controller and management cluster.
+# TYPE nsxt_cluster_status gauge
+nsxt_cluster_status 1
+# HELP nsxt_dhcp_ack_packet Number of DHCP ACK packets
+# TYPE nsxt_dhcp_ack_packet gauge
+nsxt_dhcp_ack_packet{id="27653408-0d1f-46a5-aaec-21b82e2cca27",name="T1-ALB-dhcp-server"} 0
+# HELP nsxt_dhcp_decline_packet Number of DHCP DECLINE packets
+# TYPE nsxt_dhcp_decline_packet gauge
+nsxt_dhcp_decline_packet{id="27653408-0d1f-46a5-aaec-21b82e2cca27",name="T1-ALB-dhcp-server"} 0
+# HELP nsxt_dhcp_discover_packet Number of DHCP DISCOVER packets
+# TYPE nsxt_dhcp_discover_packet gauge
+nsxt_dhcp_discover_packet{id="27653408-0d1f-46a5-aaec-21b82e2cca27",name="T1-ALB-dhcp-server"} 0
+# HELP nsxt_dhcp_error_total Number of DHCP errors
+# TYPE nsxt_dhcp_error_total gauge
+nsxt_dhcp_error_total{id="27653408-0d1f-46a5-aaec-21b82e2cca27",name="T1-ALB-dhcp-server"} 0
+# HELP nsxt_dhcp_inform_packet Number of DHCP INFORM packets
+# TYPE nsxt_dhcp_inform_packet gauge
+nsxt_dhcp_inform_packet{id="27653408-0d1f-46a5-aaec-21b82e2cca27",name="T1-ALB-dhcp-server"} 0
+# HELP nsxt_dhcp_ip_pool_allocated_total Total number of allocated ip of dhcp ip pool
+# TYPE nsxt_dhcp_ip_pool_allocated_total gauge
+nsxt_dhcp_ip_pool_allocated_total{dhcp_id="27653408-0d1f-46a5-aaec-21b82e2cca27",id="50d53ad5-2612-4e04-ba5c-13a6fd402e2a"} 0
+# HELP nsxt_dhcp_ip_pool_size_total Total size of dhcp ip pool
+# TYPE nsxt_dhcp_ip_pool_size_total gauge
+nsxt_dhcp_ip_pool_size_total{dhcp_id="27653408-0d1f-46a5-aaec-21b82e2cca27",id="50d53ad5-2612-4e04-ba5c-13a6fd402e2a"} 100
+# HELP nsxt_dhcp_nack_packet Number of DHCP NACK packets
+# TYPE nsxt_dhcp_nack_packet gauge
+nsxt_dhcp_nack_packet{id="27653408-0d1f-46a5-aaec-21b82e2cca27",name="T1-ALB-dhcp-server"} 0
+# HELP nsxt_dhcp_offer_packet Number of DHCP OFFER packets
+# TYPE nsxt_dhcp_offer_packet gauge
+nsxt_dhcp_offer_packet{id="27653408-0d1f-46a5-aaec-21b82e2cca27",name="T1-ALB-dhcp-server"} 0
+# HELP nsxt_dhcp_release_packet Number of DHCP RELEASE packets
+# TYPE nsxt_dhcp_release_packet gauge
+nsxt_dhcp_release_packet{id="27653408-0d1f-46a5-aaec-21b82e2cca27",name="T1-ALB-dhcp-server"} 0
+# HELP nsxt_dhcp_request_packet Number of DHCP REQUEST packets
+# TYPE nsxt_dhcp_request_packet gauge
+nsxt_dhcp_request_packet{id="27653408-0d1f-46a5-aaec-21b82e2cca27",name="T1-ALB-dhcp-server"} 0
+# HELP nsxt_dhcp_status Status of DHCP
+# TYPE nsxt_dhcp_status gauge
+nsxt_dhcp_status{id="27653408-0d1f-46a5-aaec-21b82e2cca27",name="T1-ALB-dhcp-server",status="DOWN"} 1
+nsxt_dhcp_status{id="27653408-0d1f-46a5-aaec-21b82e2cca27",name="T1-ALB-dhcp-server",status="ERROR"} 0
+nsxt_dhcp_status{id="27653408-0d1f-46a5-aaec-21b82e2cca27",name="T1-ALB-dhcp-server",status="NO_STANDBY"} 0
+nsxt_dhcp_status{id="27653408-0d1f-46a5-aaec-21b82e2cca27",name="T1-ALB-dhcp-server",status="UP"} 0
+# HELP nsxt_firewall_total_bytes Total bytes processed by the firewall rule
+# TYPE nsxt_firewall_total_bytes gauge
+nsxt_firewall_total_bytes{id="1001",name="default_rule",section_id="3a3ba5a6-3769-4953-9419-975deb37235b"} 0
+nsxt_firewall_total_bytes{id="1002",name="default_rule",section_id="a24c694c-6eb8-4496-837e-6440eb435b12"} 0
+nsxt_firewall_total_bytes{id="2",name="Default Layer3 Rule",section_id="ffffffff-8a04-4924-a5b4-54d30e81befe"} 1.41353058e+08
+nsxt_firewall_total_bytes{id="2024",name="default_rule",section_id="4a238f97-f391-4625-8744-bbe8a9432f3d"} 5.9502495e+07
+nsxt_firewall_total_bytes{id="2025",name="default_rule",section_id="58c069db-c6ab-44ee-bc80-6fd2dbc7a02c"} 0
+nsxt_firewall_total_bytes{id="2026",name="default_rule",section_id="2de07c25-af73-4ffe-8d1c-6af62101a11b"} 0
+nsxt_firewall_total_bytes{id="3053",name="default_rule",section_id="d5f681a8-ca9f-465d-84ab-b3c39fad7b8f"} 0
+nsxt_firewall_total_bytes{id="3054",name="default_rule",section_id="558abe45-1f63-4266-b800-efef2e43c637"} 0
+nsxt_firewall_total_bytes{id="4072",name="default_rule",section_id="e8482eb2-f0fb-42bb-97db-bcbe79486b37"} 0
+nsxt_firewall_total_bytes{id="5100",name="block-2to3",section_id="c640985a-e49e-4582-b08a-ef6068d31c35"} 4794
+nsxt_firewall_total_bytes{id="5101",name="block-3to2",section_id="c640985a-e49e-4582-b08a-ef6068d31c35"} 4500
+nsxt_firewall_total_bytes{id="5103",name="default_rule",section_id="e87215f4-5094-4a3e-84b5-af2dee5bdf35"} 0
+nsxt_firewall_total_bytes{id="5104",name="default_rule",section_id="b2d2a7dc-ec8e-42ef-9d21-2c96b28f80f8"} 0
+nsxt_firewall_total_bytes{id="6121",name="default_rule",section_id="59cae166-4463-4a67-9a48-9fbb91b3b659"} 0
+# HELP nsxt_firewall_total_packets Total packets processed by the firewall rule
+# TYPE nsxt_firewall_total_packets gauge
+nsxt_firewall_total_packets{id="1001",name="default_rule",section_id="3a3ba5a6-3769-4953-9419-975deb37235b"} 0
+nsxt_firewall_total_packets{id="1002",name="default_rule",section_id="a24c694c-6eb8-4496-837e-6440eb435b12"} 0
+nsxt_firewall_total_packets{id="2",name="Default Layer3 Rule",section_id="ffffffff-8a04-4924-a5b4-54d30e81befe"} 1.922721e+06
+nsxt_firewall_total_packets{id="2024",name="default_rule",section_id="4a238f97-f391-4625-8744-bbe8a9432f3d"} 967481
+nsxt_firewall_total_packets{id="2025",name="default_rule",section_id="58c069db-c6ab-44ee-bc80-6fd2dbc7a02c"} 0
+nsxt_firewall_total_packets{id="2026",name="default_rule",section_id="2de07c25-af73-4ffe-8d1c-6af62101a11b"} 0
+nsxt_firewall_total_packets{id="3053",name="default_rule",section_id="d5f681a8-ca9f-465d-84ab-b3c39fad7b8f"} 0
+nsxt_firewall_total_packets{id="3054",name="default_rule",section_id="558abe45-1f63-4266-b800-efef2e43c637"} 0
+nsxt_firewall_total_packets{id="4072",name="default_rule",section_id="e8482eb2-f0fb-42bb-97db-bcbe79486b37"} 0
+nsxt_firewall_total_packets{id="5100",name="block-2to3",section_id="c640985a-e49e-4582-b08a-ef6068d31c35"} 71
+nsxt_firewall_total_packets{id="5101",name="block-3to2",section_id="c640985a-e49e-4582-b08a-ef6068d31c35"} 71
+nsxt_firewall_total_packets{id="5103",name="default_rule",section_id="e87215f4-5094-4a3e-84b5-af2dee5bdf35"} 0
+nsxt_firewall_total_packets{id="5104",name="default_rule",section_id="b2d2a7dc-ec8e-42ef-9d21-2c96b28f80f8"} 0
+nsxt_firewall_total_packets{id="6121",name="default_rule",section_id="59cae166-4463-4a67-9a48-9fbb91b3b659"} 0
+# HELP nsxt_logical_port_status Status of logical port
+# TYPE nsxt_logical_port_status gauge
+nsxt_logical_port_status{id="0c7dbf11-4296-4373-9283-3699bae0babf",logical_switch_id="78c78fe3-6105-4ab3-8883-34fbc01068de",name="C1-WebC1/C1-WebC1.vmx@86312071-93d1-4e3c-ac2d-0313c6c32d3e",status="DOWN"} 1
+nsxt_logical_port_status{id="0c7dbf11-4296-4373-9283-3699bae0babf",logical_switch_id="78c78fe3-6105-4ab3-8883-34fbc01068de",name="C1-WebC1/C1-WebC1.vmx@86312071-93d1-4e3c-ac2d-0313c6c32d3e",status="UNKNOWN"} 0
+nsxt_logical_port_status{id="0c7dbf11-4296-4373-9283-3699bae0babf",logical_switch_id="78c78fe3-6105-4ab3-8883-34fbc01068de",name="C1-WebC1/C1-WebC1.vmx@86312071-93d1-4e3c-ac2d-0313c6c32d3e",status="UP"} 0
+nsxt_logical_port_status{id="0d30b1d2-d0ae-42cc-a46f-61594e0c331b",logical_switch_id="f5612d1d-245a-411b-89fc-ec975a47a954",name="T1-ALB-dhcp-lp",status="DOWN"} 0
+nsxt_logical_port_status{id="0d30b1d2-d0ae-42cc-a46f-61594e0c331b",logical_switch_id="f5612d1d-245a-411b-89fc-ec975a47a954",name="T1-ALB-dhcp-lp",status="UNKNOWN"} 0
+nsxt_logical_port_status{id="0d30b1d2-d0ae-42cc-a46f-61594e0c331b",logical_switch_id="f5612d1d-245a-411b-89fc-ec975a47a954",name="T1-ALB-dhcp-lp",status="UP"} 1
+nsxt_logical_port_status{id="3731117a-9f8a-4d1f-ac8a-10439b05c08d",logical_switch_id="9f0681a0-19cf-4903-8362-1825a25c80f1",name="bitnami-wordpress-5.9.3-25-r95-linux-debian-10-x86_64-nami-RGc1.vmx@1b319ae3-b5d9-45ba-859c-0a3509c91a01",status="DOWN"} 0
+nsxt_logical_port_status{id="3731117a-9f8a-4d1f-ac8a-10439b05c08d",logical_switch_id="9f0681a0-19cf-4903-8362-1825a25c80f1",name="bitnami-wordpress-5.9.3-25-r95-linux-debian-10-x86_64-nami-RGc1.vmx@1b319ae3-b5d9-45ba-859c-0a3509c91a01",status="UNKNOWN"} 0
+nsxt_logical_port_status{id="3731117a-9f8a-4d1f-ac8a-10439b05c08d",logical_switch_id="9f0681a0-19cf-4903-8362-1825a25c80f1",name="bitnami-wordpress-5.9.3-25-r95-linux-debian-10-x86_64-nami-RGc1.vmx@1b319ae3-b5d9-45ba-859c-0a3509c91a01",status="UP"} 1
+nsxt_logical_port_status{id="4c292c98-a505-4f37-ada9-0621aae5f112",logical_switch_id="e012d16b-29d0-499e-98b6-6e8aa5ba7e74",name="T0-BACKUP-EXT-INT-BACKUP-ulp",status="DOWN"} 0
+nsxt_logical_port_status{id="4c292c98-a505-4f37-ada9-0621aae5f112",logical_switch_id="e012d16b-29d0-499e-98b6-6e8aa5ba7e74",name="T0-BACKUP-EXT-INT-BACKUP-ulp",status="UNKNOWN"} 0
+nsxt_logical_port_status{id="4c292c98-a505-4f37-ada9-0621aae5f112",logical_switch_id="e012d16b-29d0-499e-98b6-6e8aa5ba7e74",name="T0-BACKUP-EXT-INT-BACKUP-ulp",status="UP"} 1
+nsxt_logical_port_status{id="695c5474-71f0-427f-b306-3b8b2703fe1f",logical_switch_id="0e794c00-2ff2-470e-bdd7-bec5b385cbb7",name="T0-GERENCIA-EXT-INT-GERENCIA-ulp",status="DOWN"} 0
+nsxt_logical_port_status{id="695c5474-71f0-427f-b306-3b8b2703fe1f",logical_switch_id="0e794c00-2ff2-470e-bdd7-bec5b385cbb7",name="T0-GERENCIA-EXT-INT-GERENCIA-ulp",status="UNKNOWN"} 0
+nsxt_logical_port_status{id="695c5474-71f0-427f-b306-3b8b2703fe1f",logical_switch_id="0e794c00-2ff2-470e-bdd7-bec5b385cbb7",name="T0-GERENCIA-EXT-INT-GERENCIA-ulp",status="UP"} 1
+nsxt_logical_port_status{id="6aec3c15-5ca2-454b-8d34-707fc6c1cbd9",logical_switch_id="9f0681a0-19cf-4903-8362-1825a25c80f1",name="acme-db-01-c3aF.vmx@193a77ff-4d4a-49f4-a1ff-070c0e895ae9",status="DOWN"} 0
+nsxt_logical_port_status{id="6aec3c15-5ca2-454b-8d34-707fc6c1cbd9",logical_switch_id="9f0681a0-19cf-4903-8362-1825a25c80f1",name="acme-db-01-c3aF.vmx@193a77ff-4d4a-49f4-a1ff-070c0e895ae9",status="UNKNOWN"} 0
+nsxt_logical_port_status{id="6aec3c15-5ca2-454b-8d34-707fc6c1cbd9",logical_switch_id="9f0681a0-19cf-4903-8362-1825a25c80f1",name="acme-db-01-c3aF.vmx@193a77ff-4d4a-49f4-a1ff-070c0e895ae9",status="UP"} 1
+nsxt_logical_port_status{id="7941b033-e43c-4467-aa4e-8f35a194d004",logical_switch_id="9f0681a0-19cf-4903-8362-1825a25c80f1",name="acme-db-02-iHhV.vmx@48bccc4c-eef7-4815-9dd6-156b77877670",status="DOWN"} 0
+nsxt_logical_port_status{id="7941b033-e43c-4467-aa4e-8f35a194d004",logical_switch_id="9f0681a0-19cf-4903-8362-1825a25c80f1",name="acme-db-02-iHhV.vmx@48bccc4c-eef7-4815-9dd6-156b77877670",status="UNKNOWN"} 0
+nsxt_logical_port_status{id="7941b033-e43c-4467-aa4e-8f35a194d004",logical_switch_id="9f0681a0-19cf-4903-8362-1825a25c80f1",name="acme-db-02-iHhV.vmx@48bccc4c-eef7-4815-9dd6-156b77877670",status="UP"} 1
+nsxt_logical_port_status{id="84bde6e9-9ea0-4f13-ab7d-ecca86e18a79",logical_switch_id="7159893b-9150-4b81-8fbf-58bd2f57a1e9",name="acme-web-01-HfNK.vmx@df385899-412e-4439-ac91-967aaa92e4f4",status="DOWN"} 0
+nsxt_logical_port_status{id="84bde6e9-9ea0-4f13-ab7d-ecca86e18a79",logical_switch_id="7159893b-9150-4b81-8fbf-58bd2f57a1e9",name="acme-web-01-HfNK.vmx@df385899-412e-4439-ac91-967aaa92e4f4",status="UNKNOWN"} 0
+nsxt_logical_port_status{id="84bde6e9-9ea0-4f13-ab7d-ecca86e18a79",logical_switch_id="7159893b-9150-4b81-8fbf-58bd2f57a1e9",name="acme-web-01-HfNK.vmx@df385899-412e-4439-ac91-967aaa92e4f4",status="UP"} 1
+nsxt_logical_port_status{id="969be25c-de99-4ed9-967a-bcf2230eb2b3",logical_switch_id="c9fcc576-8d14-40b9-ab9d-b79251288471",name="TO-INTERNET-EXT-INT-INTERNET-ulp",status="DOWN"} 0
+nsxt_logical_port_status{id="969be25c-de99-4ed9-967a-bcf2230eb2b3",logical_switch_id="c9fcc576-8d14-40b9-ab9d-b79251288471",name="TO-INTERNET-EXT-INT-INTERNET-ulp",status="UNKNOWN"} 0
+nsxt_logical_port_status{id="969be25c-de99-4ed9-967a-bcf2230eb2b3",logical_switch_id="c9fcc576-8d14-40b9-ab9d-b79251288471",name="TO-INTERNET-EXT-INT-INTERNET-ulp",status="UP"} 1
+nsxt_logical_port_status{id="b6ed4d20-d726-445e-8d78-d97c1c82082a",logical_switch_id="9f0681a0-19cf-4903-8362-1825a25c80f1",name="infra-fdc53018-e2d9-488d-85dc-7fa75e3750de-lp",status="DOWN"} 0
+nsxt_logical_port_status{id="b6ed4d20-d726-445e-8d78-d97c1c82082a",logical_switch_id="9f0681a0-19cf-4903-8362-1825a25c80f1",name="infra-fdc53018-e2d9-488d-85dc-7fa75e3750de-lp",status="UNKNOWN"} 0
+nsxt_logical_port_status{id="b6ed4d20-d726-445e-8d78-d97c1c82082a",logical_switch_id="9f0681a0-19cf-4903-8362-1825a25c80f1",name="infra-fdc53018-e2d9-488d-85dc-7fa75e3750de-lp",status="UP"} 1
+nsxt_logical_port_status{id="bc71cb50-0f00-4437-ba99-244a952ca91c",logical_switch_id="ffc0c008-7007-4d13-9b4c-b35765016aa0",name="infra-3c6b4283-cf3e-49f6-8851-14125ba3697d-lp",status="DOWN"} 0
+nsxt_logical_port_status{id="bc71cb50-0f00-4437-ba99-244a952ca91c",logical_switch_id="ffc0c008-7007-4d13-9b4c-b35765016aa0",name="infra-3c6b4283-cf3e-49f6-8851-14125ba3697d-lp",status="UNKNOWN"} 0
+nsxt_logical_port_status{id="bc71cb50-0f00-4437-ba99-244a952ca91c",logical_switch_id="ffc0c008-7007-4d13-9b4c-b35765016aa0",name="infra-3c6b4283-cf3e-49f6-8851-14125ba3697d-lp",status="UP"} 1
+nsxt_logical_port_status{id="c154a8db-78d2-4135-833c-fd0729eb2f40",logical_switch_id="78c78fe3-6105-4ab3-8883-34fbc01068de",name="C2-Web-C2/C2-Web-C2.vmx@86312071-93d1-4e3c-ac2d-0313c6c32d3e",status="DOWN"} 1
+nsxt_logical_port_status{id="c154a8db-78d2-4135-833c-fd0729eb2f40",logical_switch_id="78c78fe3-6105-4ab3-8883-34fbc01068de",name="C2-Web-C2/C2-Web-C2.vmx@86312071-93d1-4e3c-ac2d-0313c6c32d3e",status="UNKNOWN"} 0
+nsxt_logical_port_status{id="c154a8db-78d2-4135-833c-fd0729eb2f40",logical_switch_id="78c78fe3-6105-4ab3-8883-34fbc01068de",name="C2-Web-C2/C2-Web-C2.vmx@86312071-93d1-4e3c-ac2d-0313c6c32d3e",status="UP"} 0
+nsxt_logical_port_status{id="ce2b03d3-9705-4fe4-bf46-e52f17f94664",logical_switch_id="7159893b-9150-4b81-8fbf-58bd2f57a1e9",name="infra-a41a1cab-1a13-47df-bd2c-abcee9132b4e-lp",status="DOWN"} 0
+nsxt_logical_port_status{id="ce2b03d3-9705-4fe4-bf46-e52f17f94664",logical_switch_id="7159893b-9150-4b81-8fbf-58bd2f57a1e9",name="infra-a41a1cab-1a13-47df-bd2c-abcee9132b4e-lp",status="UNKNOWN"} 0
+nsxt_logical_port_status{id="ce2b03d3-9705-4fe4-bf46-e52f17f94664",logical_switch_id="7159893b-9150-4b81-8fbf-58bd2f57a1e9",name="infra-a41a1cab-1a13-47df-bd2c-abcee9132b4e-lp",status="UP"} 1
+nsxt_logical_port_status{id="d03a97d7-b059-49a4-be5e-298611e52cd6",logical_switch_id="78c78fe3-6105-4ab3-8883-34fbc01068de",name="C1-WebC2/C1-WebC2.vmx@fabe2f72-b9f0-40ad-8057-35a976222657",status="DOWN"} 1
+nsxt_logical_port_status{id="d03a97d7-b059-49a4-be5e-298611e52cd6",logical_switch_id="78c78fe3-6105-4ab3-8883-34fbc01068de",name="C1-WebC2/C1-WebC2.vmx@fabe2f72-b9f0-40ad-8057-35a976222657",status="UNKNOWN"} 0
+nsxt_logical_port_status{id="d03a97d7-b059-49a4-be5e-298611e52cd6",logical_switch_id="78c78fe3-6105-4ab3-8883-34fbc01068de",name="C1-WebC2/C1-WebC2.vmx@fabe2f72-b9f0-40ad-8057-35a976222657",status="UP"} 0
+nsxt_logical_port_status{id="dac2e83b-74c7-40d7-b7d0-b74167f375a3",logical_switch_id="7159893b-9150-4b81-8fbf-58bd2f57a1e9",name="acme-web-02-E9ke.vmx@a93fdd2d-9d83-47e0-ac4d-49e2067484d5",status="DOWN"} 0
+nsxt_logical_port_status{id="dac2e83b-74c7-40d7-b7d0-b74167f375a3",logical_switch_id="7159893b-9150-4b81-8fbf-58bd2f57a1e9",name="acme-web-02-E9ke.vmx@a93fdd2d-9d83-47e0-ac4d-49e2067484d5",status="UNKNOWN"} 0
+nsxt_logical_port_status{id="dac2e83b-74c7-40d7-b7d0-b74167f375a3",logical_switch_id="7159893b-9150-4b81-8fbf-58bd2f57a1e9",name="acme-web-02-E9ke.vmx@a93fdd2d-9d83-47e0-ac4d-49e2067484d5",status="UP"} 1
+nsxt_logical_port_status{id="df5c5337-dcac-4458-a7e4-26aaa06fe673",logical_switch_id="78c78fe3-6105-4ab3-8883-34fbc01068de",name="infra-TESTE_OVERLAY-lp",status="DOWN"} 0
+nsxt_logical_port_status{id="df5c5337-dcac-4458-a7e4-26aaa06fe673",logical_switch_id="78c78fe3-6105-4ab3-8883-34fbc01068de",name="infra-TESTE_OVERLAY-lp",status="UNKNOWN"} 0
+nsxt_logical_port_status{id="df5c5337-dcac-4458-a7e4-26aaa06fe673",logical_switch_id="78c78fe3-6105-4ab3-8883-34fbc01068de",name="infra-TESTE_OVERLAY-lp",status="UP"} 1
+nsxt_logical_port_status{id="e42db1ca-11e0-4472-932e-12a09275eb06",logical_switch_id="f5612d1d-245a-411b-89fc-ec975a47a954",name="T1-ALB-dhcp-server-lp",status="DOWN"} 0
+nsxt_logical_port_status{id="e42db1ca-11e0-4472-932e-12a09275eb06",logical_switch_id="f5612d1d-245a-411b-89fc-ec975a47a954",name="T1-ALB-dhcp-server-lp",status="UNKNOWN"} 0
+nsxt_logical_port_status{id="e42db1ca-11e0-4472-932e-12a09275eb06",logical_switch_id="f5612d1d-245a-411b-89fc-ec975a47a954",name="T1-ALB-dhcp-server-lp",status="UP"} 1
+nsxt_logical_port_status{id="e8af593c-a9b9-4cd4-a54f-c55e582c8edf",logical_switch_id="341c0e3c-2420-4dbb-9425-55cad6ac04d8",name="infra-AVI-SE-MGMT-DHCP-lp",status="DOWN"} 0
+nsxt_logical_port_status{id="e8af593c-a9b9-4cd4-a54f-c55e582c8edf",logical_switch_id="341c0e3c-2420-4dbb-9425-55cad6ac04d8",name="infra-AVI-SE-MGMT-DHCP-lp",status="UNKNOWN"} 0
+nsxt_logical_port_status{id="e8af593c-a9b9-4cd4-a54f-c55e582c8edf",logical_switch_id="341c0e3c-2420-4dbb-9425-55cad6ac04d8",name="infra-AVI-SE-MGMT-DHCP-lp",status="UP"} 1
+# HELP nsxt_logical_router_port_rx_dropped_packet Total receive (rx) packets dropped of logical router port
+# TYPE nsxt_logical_router_port_rx_dropped_packet gauge
+nsxt_logical_router_port_rx_dropped_packet{id="036aafa1-f8b1-485b-b80b-ac84aebfa45c",logical_router_id="9d79bcbd-87b2-48d0-9610-ffae43eac105",name="T0-GERENCIA-d4e09d81-8604-414a-9f76-1fa09e7bec6c-t1_lrp"} 0
+nsxt_logical_router_port_rx_dropped_packet{id="0592ff5e-ca3c-4da7-9467-b7c8288c722b",logical_router_id="9d79bcbd-87b2-48d0-9610-ffae43eac105",name="infra-fdc53018-e2d9-488d-85dc-7fa75e3750de-dlrp"} 0
+nsxt_logical_router_port_rx_dropped_packet{id="1d746401-1716-48d0-9ab6-af3ecc487fec",logical_router_id="8cb6d623-eebd-42b6-ad63-38379ced3a03",name="T0-VRF-T1-VRF-t0_lrp"} 0
+nsxt_logical_router_port_rx_dropped_packet{id="3a1ab833-3f62-4934-9378-bb4fbcb89198",logical_router_id="97d52c41-517e-45f7-983b-38dd29ef69a1",name="T0-GERENCIA-T1-GERENCIA-t1_lrp"} 0
+nsxt_logical_router_port_rx_dropped_packet{id="4ef430e9-2c29-4017-bd9e-6819a5a318be",logical_router_id="8c1ec55a-438a-49e7-9e46-3da597eb478b",name="T0-GERENCIA-T1-ALB-t1_lrp"} 0
+nsxt_logical_router_port_rx_dropped_packet{id="5be5733e-cfde-4def-99ec-eb4d1f27e69c",logical_router_id="e8994988-c21c-455c-a6c6-2bf9b759296d",name="T0-GERENCIA-5210b2fc-d2a3-4c87-a8be-d1559d09c451-t0_lrp"} 0
+nsxt_logical_router_port_rx_dropped_packet{id="6bf8b3f9-d1f9-40bf-b653-62730cce18d9",logical_router_id="b8f287c2-e053-464c-9bd0-0b1b2d0d2eb0",name="T0-GERENCIA-5210b2fc-d2a3-4c87-a8be-d1559d09c451-t1_lrp"} 0
+nsxt_logical_router_port_rx_dropped_packet{id="70488318-0ab5-477c-9f25-842217f84937",logical_router_id="e8994988-c21c-455c-a6c6-2bf9b759296d",name="T0-GERENCIA-T1-GERENCIA-t0_lrp"} 0
+nsxt_logical_router_port_rx_dropped_packet{id="79221b8a-6ad8-476f-8b02-2a070b6fb066",logical_router_id="e8994988-c21c-455c-a6c6-2bf9b759296d",name="T0-GERENCIA-T1-ALB-t0_lrp"} 0
+nsxt_logical_router_port_rx_dropped_packet{id="7a157072-274c-45cb-a5db-e68928cf875f",logical_router_id="b8f287c2-e053-464c-9bd0-0b1b2d0d2eb0",name="infra-a41a1cab-1a13-47df-bd2c-abcee9132b4e-dlrp"} 0
+nsxt_logical_router_port_rx_dropped_packet{id="7a164589-1011-46d6-a5b4-6b346cb05cec",logical_router_id="1427c1d9-a259-48fe-8b34-09bc972970e9",name="infra-3c6b4283-cf3e-49f6-8851-14125ba3697d-dlrp"} 0
+nsxt_logical_router_port_rx_dropped_packet{id="83a0c99b-7d49-4847-a4f4-3e6e71df43c5",logical_router_id="e8994988-c21c-455c-a6c6-2bf9b759296d",name="T0-GERENCIA-d4e09d81-8604-414a-9f76-1fa09e7bec6c-t0_lrp"} 0
+nsxt_logical_router_port_rx_dropped_packet{id="8a060134-bd59-4bf3-a533-5df934d60933",logical_router_id="7678cb7e-2a10-4871-a945-85720fa344b9",name="EXT-INT-BACKUP"} 5
+nsxt_logical_router_port_rx_dropped_packet{id="939594d8-fc1a-42c3-818e-13848d1e7fa7",logical_router_id="485c4456-adef-48fc-85ad-fcdacb9a6328",name="T0-VRF-T1-VRF-t1_lrp"} 0
+nsxt_logical_router_port_rx_dropped_packet{id="9d02ca10-a895-49e7-b796-5b96462f960e",logical_router_id="c61ad81c-fbd7-44c4-8011-92bbc5b0798c",name="infra-TESTE_OVERLAY-dlrp"} 0
+nsxt_logical_router_port_rx_dropped_packet{id="a8140bf5-08e7-4435-af36-90a6efe2506d",logical_router_id="8c1ec55a-438a-49e7-9e46-3da597eb478b",name="T1-ALB-dhcp-dlrp"} 0
+nsxt_logical_router_port_rx_dropped_packet{id="a84229da-4f98-407a-8624-64ad7e923c48",logical_router_id="e8994988-c21c-455c-a6c6-2bf9b759296d",name="EXT-INT-GERENCIA"} 0
+nsxt_logical_router_port_rx_dropped_packet{id="d6f59e3b-1cc5-4609-a7d7-ab69539a60b1",logical_router_id="361952a9-68b3-43ed-a9fc-d1e4d9fcd312",name="EXT-INT-INTERNET"} 794223
+nsxt_logical_router_port_rx_dropped_packet{id="dd3e5c5c-21b2-411e-a7a7-2056d67380b9",logical_router_id="8c1ec55a-438a-49e7-9e46-3da597eb478b",name="infra-AVI-SE-MGMT-DHCP-dlrp"} 0
+nsxt_logical_router_port_rx_dropped_packet{id="f694be97-3b10-4d67-b3be-d54a311c24c1",logical_router_id="1427c1d9-a259-48fe-8b34-09bc972970e9",name="TO-INTERNET-a342d62c-c20b-4144-a15c-fe3dc00356c0-t1_lrp"} 0
+nsxt_logical_router_port_rx_dropped_packet{id="fcdd6a76-9369-472a-8a70-e03c447d70f8",logical_router_id="361952a9-68b3-43ed-a9fc-d1e4d9fcd312",name="TO-INTERNET-a342d62c-c20b-4144-a15c-fe3dc00356c0-t0_lrp"} 0
+# HELP nsxt_logical_router_port_rx_total_byte Total bytes received (rx)  of logical router port rx
+# TYPE nsxt_logical_router_port_rx_total_byte gauge
+nsxt_logical_router_port_rx_total_byte{id="036aafa1-f8b1-485b-b80b-ac84aebfa45c",logical_router_id="9d79bcbd-87b2-48d0-9610-ffae43eac105",name="T0-GERENCIA-d4e09d81-8604-414a-9f76-1fa09e7bec6c-t1_lrp"} 0
+nsxt_logical_router_port_rx_total_byte{id="0592ff5e-ca3c-4da7-9467-b7c8288c722b",logical_router_id="9d79bcbd-87b2-48d0-9610-ffae43eac105",name="infra-fdc53018-e2d9-488d-85dc-7fa75e3750de-dlrp"} 8.521608e+06
+nsxt_logical_router_port_rx_total_byte{id="1d746401-1716-48d0-9ab6-af3ecc487fec",logical_router_id="8cb6d623-eebd-42b6-ad63-38379ced3a03",name="T0-VRF-T1-VRF-t0_lrp"} 0
+nsxt_logical_router_port_rx_total_byte{id="3a1ab833-3f62-4934-9378-bb4fbcb89198",logical_router_id="97d52c41-517e-45f7-983b-38dd29ef69a1",name="T0-GERENCIA-T1-GERENCIA-t1_lrp"} 0
+nsxt_logical_router_port_rx_total_byte{id="4ef430e9-2c29-4017-bd9e-6819a5a318be",logical_router_id="8c1ec55a-438a-49e7-9e46-3da597eb478b",name="T0-GERENCIA-T1-ALB-t1_lrp"} 0
+nsxt_logical_router_port_rx_total_byte{id="5be5733e-cfde-4def-99ec-eb4d1f27e69c",logical_router_id="e8994988-c21c-455c-a6c6-2bf9b759296d",name="T0-GERENCIA-5210b2fc-d2a3-4c87-a8be-d1559d09c451-t0_lrp"} 0
+nsxt_logical_router_port_rx_total_byte{id="6bf8b3f9-d1f9-40bf-b653-62730cce18d9",logical_router_id="b8f287c2-e053-464c-9bd0-0b1b2d0d2eb0",name="T0-GERENCIA-5210b2fc-d2a3-4c87-a8be-d1559d09c451-t1_lrp"} 0
+nsxt_logical_router_port_rx_total_byte{id="70488318-0ab5-477c-9f25-842217f84937",logical_router_id="e8994988-c21c-455c-a6c6-2bf9b759296d",name="T0-GERENCIA-T1-GERENCIA-t0_lrp"} 378
+nsxt_logical_router_port_rx_total_byte{id="79221b8a-6ad8-476f-8b02-2a070b6fb066",logical_router_id="e8994988-c21c-455c-a6c6-2bf9b759296d",name="T0-GERENCIA-T1-ALB-t0_lrp"} 378
+nsxt_logical_router_port_rx_total_byte{id="7a157072-274c-45cb-a5db-e68928cf875f",logical_router_id="b8f287c2-e053-464c-9bd0-0b1b2d0d2eb0",name="infra-a41a1cab-1a13-47df-bd2c-abcee9132b4e-dlrp"} 2.875861e+06
+nsxt_logical_router_port_rx_total_byte{id="7a164589-1011-46d6-a5b4-6b346cb05cec",logical_router_id="1427c1d9-a259-48fe-8b34-09bc972970e9",name="infra-3c6b4283-cf3e-49f6-8851-14125ba3697d-dlrp"} 220799
+nsxt_logical_router_port_rx_total_byte{id="83a0c99b-7d49-4847-a4f4-3e6e71df43c5",logical_router_id="e8994988-c21c-455c-a6c6-2bf9b759296d",name="T0-GERENCIA-d4e09d81-8604-414a-9f76-1fa09e7bec6c-t0_lrp"} 0
+nsxt_logical_router_port_rx_total_byte{id="8a060134-bd59-4bf3-a533-5df934d60933",logical_router_id="7678cb7e-2a10-4871-a945-85720fa344b9",name="EXT-INT-BACKUP"} 5.066919e+08
+nsxt_logical_router_port_rx_total_byte{id="939594d8-fc1a-42c3-818e-13848d1e7fa7",logical_router_id="485c4456-adef-48fc-85ad-fcdacb9a6328",name="T0-VRF-T1-VRF-t1_lrp"} 0
+nsxt_logical_router_port_rx_total_byte{id="9d02ca10-a895-49e7-b796-5b96462f960e",logical_router_id="c61ad81c-fbd7-44c4-8011-92bbc5b0798c",name="infra-TESTE_OVERLAY-dlrp"} 0
+nsxt_logical_router_port_rx_total_byte{id="a8140bf5-08e7-4435-af36-90a6efe2506d",logical_router_id="8c1ec55a-438a-49e7-9e46-3da597eb478b",name="T1-ALB-dhcp-dlrp"} 0
+nsxt_logical_router_port_rx_total_byte{id="a84229da-4f98-407a-8624-64ad7e923c48",logical_router_id="e8994988-c21c-455c-a6c6-2bf9b759296d",name="EXT-INT-GERENCIA"} 5.21018592e+08
+nsxt_logical_router_port_rx_total_byte{id="d6f59e3b-1cc5-4609-a7d7-ab69539a60b1",logical_router_id="361952a9-68b3-43ed-a9fc-d1e4d9fcd312",name="EXT-INT-INTERNET"} 5.8782714e+08
+nsxt_logical_router_port_rx_total_byte{id="dd3e5c5c-21b2-411e-a7a7-2056d67380b9",logical_router_id="8c1ec55a-438a-49e7-9e46-3da597eb478b",name="infra-AVI-SE-MGMT-DHCP-dlrp"} 0
+nsxt_logical_router_port_rx_total_byte{id="f694be97-3b10-4d67-b3be-d54a311c24c1",logical_router_id="1427c1d9-a259-48fe-8b34-09bc972970e9",name="TO-INTERNET-a342d62c-c20b-4144-a15c-fe3dc00356c0-t1_lrp"} 0
+nsxt_logical_router_port_rx_total_byte{id="fcdd6a76-9369-472a-8a70-e03c447d70f8",logical_router_id="361952a9-68b3-43ed-a9fc-d1e4d9fcd312",name="TO-INTERNET-a342d62c-c20b-4144-a15c-fe3dc00356c0-t0_lrp"} 0
+# HELP nsxt_logical_router_port_rx_total_packet Total packets received (rx) of logical router port
+# TYPE nsxt_logical_router_port_rx_total_packet gauge
+nsxt_logical_router_port_rx_total_packet{id="036aafa1-f8b1-485b-b80b-ac84aebfa45c",logical_router_id="9d79bcbd-87b2-48d0-9610-ffae43eac105",name="T0-GERENCIA-d4e09d81-8604-414a-9f76-1fa09e7bec6c-t1_lrp"} 0
+nsxt_logical_router_port_rx_total_packet{id="0592ff5e-ca3c-4da7-9467-b7c8288c722b",logical_router_id="9d79bcbd-87b2-48d0-9610-ffae43eac105",name="infra-fdc53018-e2d9-488d-85dc-7fa75e3750de-dlrp"} 52751
+nsxt_logical_router_port_rx_total_packet{id="1d746401-1716-48d0-9ab6-af3ecc487fec",logical_router_id="8cb6d623-eebd-42b6-ad63-38379ced3a03",name="T0-VRF-T1-VRF-t0_lrp"} 0
+nsxt_logical_router_port_rx_total_packet{id="3a1ab833-3f62-4934-9378-bb4fbcb89198",logical_router_id="97d52c41-517e-45f7-983b-38dd29ef69a1",name="T0-GERENCIA-T1-GERENCIA-t1_lrp"} 0
+nsxt_logical_router_port_rx_total_packet{id="4ef430e9-2c29-4017-bd9e-6819a5a318be",logical_router_id="8c1ec55a-438a-49e7-9e46-3da597eb478b",name="T0-GERENCIA-T1-ALB-t1_lrp"} 0
+nsxt_logical_router_port_rx_total_packet{id="5be5733e-cfde-4def-99ec-eb4d1f27e69c",logical_router_id="e8994988-c21c-455c-a6c6-2bf9b759296d",name="T0-GERENCIA-5210b2fc-d2a3-4c87-a8be-d1559d09c451-t0_lrp"} 0
+nsxt_logical_router_port_rx_total_packet{id="6bf8b3f9-d1f9-40bf-b653-62730cce18d9",logical_router_id="b8f287c2-e053-464c-9bd0-0b1b2d0d2eb0",name="T0-GERENCIA-5210b2fc-d2a3-4c87-a8be-d1559d09c451-t1_lrp"} 0
+nsxt_logical_router_port_rx_total_packet{id="70488318-0ab5-477c-9f25-842217f84937",logical_router_id="e8994988-c21c-455c-a6c6-2bf9b759296d",name="T0-GERENCIA-T1-GERENCIA-t0_lrp"} 9
+nsxt_logical_router_port_rx_total_packet{id="79221b8a-6ad8-476f-8b02-2a070b6fb066",logical_router_id="e8994988-c21c-455c-a6c6-2bf9b759296d",name="T0-GERENCIA-T1-ALB-t0_lrp"} 9
+nsxt_logical_router_port_rx_total_packet{id="7a157072-274c-45cb-a5db-e68928cf875f",logical_router_id="b8f287c2-e053-464c-9bd0-0b1b2d0d2eb0",name="infra-a41a1cab-1a13-47df-bd2c-abcee9132b4e-dlrp"} 35165
+nsxt_logical_router_port_rx_total_packet{id="7a164589-1011-46d6-a5b4-6b346cb05cec",logical_router_id="1427c1d9-a259-48fe-8b34-09bc972970e9",name="infra-3c6b4283-cf3e-49f6-8851-14125ba3697d-dlrp"} 1400
+nsxt_logical_router_port_rx_total_packet{id="83a0c99b-7d49-4847-a4f4-3e6e71df43c5",logical_router_id="e8994988-c21c-455c-a6c6-2bf9b759296d",name="T0-GERENCIA-d4e09d81-8604-414a-9f76-1fa09e7bec6c-t0_lrp"} 0
+nsxt_logical_router_port_rx_total_packet{id="8a060134-bd59-4bf3-a533-5df934d60933",logical_router_id="7678cb7e-2a10-4871-a945-85720fa344b9",name="EXT-INT-BACKUP"} 7.947257e+06
+nsxt_logical_router_port_rx_total_packet{id="939594d8-fc1a-42c3-818e-13848d1e7fa7",logical_router_id="485c4456-adef-48fc-85ad-fcdacb9a6328",name="T0-VRF-T1-VRF-t1_lrp"} 0
+nsxt_logical_router_port_rx_total_packet{id="9d02ca10-a895-49e7-b796-5b96462f960e",logical_router_id="c61ad81c-fbd7-44c4-8011-92bbc5b0798c",name="infra-TESTE_OVERLAY-dlrp"} 0
+nsxt_logical_router_port_rx_total_packet{id="a8140bf5-08e7-4435-af36-90a6efe2506d",logical_router_id="8c1ec55a-438a-49e7-9e46-3da597eb478b",name="T1-ALB-dhcp-dlrp"} 0
+nsxt_logical_router_port_rx_total_packet{id="a84229da-4f98-407a-8624-64ad7e923c48",logical_router_id="e8994988-c21c-455c-a6c6-2bf9b759296d",name="EXT-INT-GERENCIA"} 7.705128e+06
+nsxt_logical_router_port_rx_total_packet{id="d6f59e3b-1cc5-4609-a7d7-ab69539a60b1",logical_router_id="361952a9-68b3-43ed-a9fc-d1e4d9fcd312",name="EXT-INT-INTERNET"} 9.069242e+06
+nsxt_logical_router_port_rx_total_packet{id="dd3e5c5c-21b2-411e-a7a7-2056d67380b9",logical_router_id="8c1ec55a-438a-49e7-9e46-3da597eb478b",name="infra-AVI-SE-MGMT-DHCP-dlrp"} 0
+nsxt_logical_router_port_rx_total_packet{id="f694be97-3b10-4d67-b3be-d54a311c24c1",logical_router_id="1427c1d9-a259-48fe-8b34-09bc972970e9",name="TO-INTERNET-a342d62c-c20b-4144-a15c-fe3dc00356c0-t1_lrp"} 0
+nsxt_logical_router_port_rx_total_packet{id="fcdd6a76-9369-472a-8a70-e03c447d70f8",logical_router_id="361952a9-68b3-43ed-a9fc-d1e4d9fcd312",name="TO-INTERNET-a342d62c-c20b-4144-a15c-fe3dc00356c0-t0_lrp"} 0
+# HELP nsxt_logical_router_port_tx_dropped_packet Total transmit (tx) packets dropped of logical router port tx
+# TYPE nsxt_logical_router_port_tx_dropped_packet gauge
+nsxt_logical_router_port_tx_dropped_packet{id="036aafa1-f8b1-485b-b80b-ac84aebfa45c",logical_router_id="9d79bcbd-87b2-48d0-9610-ffae43eac105",name="T0-GERENCIA-d4e09d81-8604-414a-9f76-1fa09e7bec6c-t1_lrp"} 0
+nsxt_logical_router_port_tx_dropped_packet{id="0592ff5e-ca3c-4da7-9467-b7c8288c722b",logical_router_id="9d79bcbd-87b2-48d0-9610-ffae43eac105",name="infra-fdc53018-e2d9-488d-85dc-7fa75e3750de-dlrp"} 0
+nsxt_logical_router_port_tx_dropped_packet{id="1d746401-1716-48d0-9ab6-af3ecc487fec",logical_router_id="8cb6d623-eebd-42b6-ad63-38379ced3a03",name="T0-VRF-T1-VRF-t0_lrp"} 0
+nsxt_logical_router_port_tx_dropped_packet{id="3a1ab833-3f62-4934-9378-bb4fbcb89198",logical_router_id="97d52c41-517e-45f7-983b-38dd29ef69a1",name="T0-GERENCIA-T1-GERENCIA-t1_lrp"} 0
+nsxt_logical_router_port_tx_dropped_packet{id="4ef430e9-2c29-4017-bd9e-6819a5a318be",logical_router_id="8c1ec55a-438a-49e7-9e46-3da597eb478b",name="T0-GERENCIA-T1-ALB-t1_lrp"} 0
+nsxt_logical_router_port_tx_dropped_packet{id="5be5733e-cfde-4def-99ec-eb4d1f27e69c",logical_router_id="e8994988-c21c-455c-a6c6-2bf9b759296d",name="T0-GERENCIA-5210b2fc-d2a3-4c87-a8be-d1559d09c451-t0_lrp"} 0
+nsxt_logical_router_port_tx_dropped_packet{id="6bf8b3f9-d1f9-40bf-b653-62730cce18d9",logical_router_id="b8f287c2-e053-464c-9bd0-0b1b2d0d2eb0",name="T0-GERENCIA-5210b2fc-d2a3-4c87-a8be-d1559d09c451-t1_lrp"} 0
+nsxt_logical_router_port_tx_dropped_packet{id="70488318-0ab5-477c-9f25-842217f84937",logical_router_id="e8994988-c21c-455c-a6c6-2bf9b759296d",name="T0-GERENCIA-T1-GERENCIA-t0_lrp"} 0
+nsxt_logical_router_port_tx_dropped_packet{id="79221b8a-6ad8-476f-8b02-2a070b6fb066",logical_router_id="e8994988-c21c-455c-a6c6-2bf9b759296d",name="T0-GERENCIA-T1-ALB-t0_lrp"} 0
+nsxt_logical_router_port_tx_dropped_packet{id="7a157072-274c-45cb-a5db-e68928cf875f",logical_router_id="b8f287c2-e053-464c-9bd0-0b1b2d0d2eb0",name="infra-a41a1cab-1a13-47df-bd2c-abcee9132b4e-dlrp"} 0
+nsxt_logical_router_port_tx_dropped_packet{id="7a164589-1011-46d6-a5b4-6b346cb05cec",logical_router_id="1427c1d9-a259-48fe-8b34-09bc972970e9",name="infra-3c6b4283-cf3e-49f6-8851-14125ba3697d-dlrp"} 0
+nsxt_logical_router_port_tx_dropped_packet{id="83a0c99b-7d49-4847-a4f4-3e6e71df43c5",logical_router_id="e8994988-c21c-455c-a6c6-2bf9b759296d",name="T0-GERENCIA-d4e09d81-8604-414a-9f76-1fa09e7bec6c-t0_lrp"} 0
+nsxt_logical_router_port_tx_dropped_packet{id="8a060134-bd59-4bf3-a533-5df934d60933",logical_router_id="7678cb7e-2a10-4871-a945-85720fa344b9",name="EXT-INT-BACKUP"} 0
+nsxt_logical_router_port_tx_dropped_packet{id="939594d8-fc1a-42c3-818e-13848d1e7fa7",logical_router_id="485c4456-adef-48fc-85ad-fcdacb9a6328",name="T0-VRF-T1-VRF-t1_lrp"} 0
+nsxt_logical_router_port_tx_dropped_packet{id="9d02ca10-a895-49e7-b796-5b96462f960e",logical_router_id="c61ad81c-fbd7-44c4-8011-92bbc5b0798c",name="infra-TESTE_OVERLAY-dlrp"} 0
+nsxt_logical_router_port_tx_dropped_packet{id="a8140bf5-08e7-4435-af36-90a6efe2506d",logical_router_id="8c1ec55a-438a-49e7-9e46-3da597eb478b",name="T1-ALB-dhcp-dlrp"} 0
+nsxt_logical_router_port_tx_dropped_packet{id="a84229da-4f98-407a-8624-64ad7e923c48",logical_router_id="e8994988-c21c-455c-a6c6-2bf9b759296d",name="EXT-INT-GERENCIA"} 0
+nsxt_logical_router_port_tx_dropped_packet{id="d6f59e3b-1cc5-4609-a7d7-ab69539a60b1",logical_router_id="361952a9-68b3-43ed-a9fc-d1e4d9fcd312",name="EXT-INT-INTERNET"} 1
+nsxt_logical_router_port_tx_dropped_packet{id="dd3e5c5c-21b2-411e-a7a7-2056d67380b9",logical_router_id="8c1ec55a-438a-49e7-9e46-3da597eb478b",name="infra-AVI-SE-MGMT-DHCP-dlrp"} 0
+nsxt_logical_router_port_tx_dropped_packet{id="f694be97-3b10-4d67-b3be-d54a311c24c1",logical_router_id="1427c1d9-a259-48fe-8b34-09bc972970e9",name="TO-INTERNET-a342d62c-c20b-4144-a15c-fe3dc00356c0-t1_lrp"} 11
+nsxt_logical_router_port_tx_dropped_packet{id="fcdd6a76-9369-472a-8a70-e03c447d70f8",logical_router_id="361952a9-68b3-43ed-a9fc-d1e4d9fcd312",name="TO-INTERNET-a342d62c-c20b-4144-a15c-fe3dc00356c0-t0_lrp"} 0
+# HELP nsxt_logical_router_port_tx_total_byte Total bytes transmitted (tx) of logical router port
+# TYPE nsxt_logical_router_port_tx_total_byte gauge
+nsxt_logical_router_port_tx_total_byte{id="036aafa1-f8b1-485b-b80b-ac84aebfa45c",logical_router_id="9d79bcbd-87b2-48d0-9610-ffae43eac105",name="T0-GERENCIA-d4e09d81-8604-414a-9f76-1fa09e7bec6c-t1_lrp"} 0
+nsxt_logical_router_port_tx_total_byte{id="0592ff5e-ca3c-4da7-9467-b7c8288c722b",logical_router_id="9d79bcbd-87b2-48d0-9610-ffae43eac105",name="infra-fdc53018-e2d9-488d-85dc-7fa75e3750de-dlrp"} 904
+nsxt_logical_router_port_tx_total_byte{id="1d746401-1716-48d0-9ab6-af3ecc487fec",logical_router_id="8cb6d623-eebd-42b6-ad63-38379ced3a03",name="T0-VRF-T1-VRF-t0_lrp"} 0
+nsxt_logical_router_port_tx_total_byte{id="3a1ab833-3f62-4934-9378-bb4fbcb89198",logical_router_id="97d52c41-517e-45f7-983b-38dd29ef69a1",name="T0-GERENCIA-T1-GERENCIA-t1_lrp"} 0
+nsxt_logical_router_port_tx_total_byte{id="4ef430e9-2c29-4017-bd9e-6819a5a318be",logical_router_id="8c1ec55a-438a-49e7-9e46-3da597eb478b",name="T0-GERENCIA-T1-ALB-t1_lrp"} 0
+nsxt_logical_router_port_tx_total_byte{id="5be5733e-cfde-4def-99ec-eb4d1f27e69c",logical_router_id="e8994988-c21c-455c-a6c6-2bf9b759296d",name="T0-GERENCIA-5210b2fc-d2a3-4c87-a8be-d1559d09c451-t0_lrp"} 0
+nsxt_logical_router_port_tx_total_byte{id="6bf8b3f9-d1f9-40bf-b653-62730cce18d9",logical_router_id="b8f287c2-e053-464c-9bd0-0b1b2d0d2eb0",name="T0-GERENCIA-5210b2fc-d2a3-4c87-a8be-d1559d09c451-t1_lrp"} 0
+nsxt_logical_router_port_tx_total_byte{id="70488318-0ab5-477c-9f25-842217f84937",logical_router_id="e8994988-c21c-455c-a6c6-2bf9b759296d",name="T0-GERENCIA-T1-GERENCIA-t0_lrp"} 878
+nsxt_logical_router_port_tx_total_byte{id="79221b8a-6ad8-476f-8b02-2a070b6fb066",logical_router_id="e8994988-c21c-455c-a6c6-2bf9b759296d",name="T0-GERENCIA-T1-ALB-t0_lrp"} 918
+nsxt_logical_router_port_tx_total_byte{id="7a157072-274c-45cb-a5db-e68928cf875f",logical_router_id="b8f287c2-e053-464c-9bd0-0b1b2d0d2eb0",name="infra-a41a1cab-1a13-47df-bd2c-abcee9132b4e-dlrp"} 3.495442e+06
+nsxt_logical_router_port_tx_total_byte{id="7a164589-1011-46d6-a5b4-6b346cb05cec",logical_router_id="1427c1d9-a259-48fe-8b34-09bc972970e9",name="infra-3c6b4283-cf3e-49f6-8851-14125ba3697d-dlrp"} 1272
+nsxt_logical_router_port_tx_total_byte{id="83a0c99b-7d49-4847-a4f4-3e6e71df43c5",logical_router_id="e8994988-c21c-455c-a6c6-2bf9b759296d",name="T0-GERENCIA-d4e09d81-8604-414a-9f76-1fa09e7bec6c-t0_lrp"} 0
+nsxt_logical_router_port_tx_total_byte{id="8a060134-bd59-4bf3-a533-5df934d60933",logical_router_id="7678cb7e-2a10-4871-a945-85720fa344b9",name="EXT-INT-BACKUP"} 4.5307778e+07
+nsxt_logical_router_port_tx_total_byte{id="939594d8-fc1a-42c3-818e-13848d1e7fa7",logical_router_id="485c4456-adef-48fc-85ad-fcdacb9a6328",name="T0-VRF-T1-VRF-t1_lrp"} 0
+nsxt_logical_router_port_tx_total_byte{id="9d02ca10-a895-49e7-b796-5b96462f960e",logical_router_id="c61ad81c-fbd7-44c4-8011-92bbc5b0798c",name="infra-TESTE_OVERLAY-dlrp"} 0
+nsxt_logical_router_port_tx_total_byte{id="a8140bf5-08e7-4435-af36-90a6efe2506d",logical_router_id="8c1ec55a-438a-49e7-9e46-3da597eb478b",name="T1-ALB-dhcp-dlrp"} 0
+nsxt_logical_router_port_tx_total_byte{id="a84229da-4f98-407a-8624-64ad7e923c48",logical_router_id="e8994988-c21c-455c-a6c6-2bf9b759296d",name="EXT-INT-GERENCIA"} 9.7618624e+07
+nsxt_logical_router_port_tx_total_byte{id="d6f59e3b-1cc5-4609-a7d7-ab69539a60b1",logical_router_id="361952a9-68b3-43ed-a9fc-d1e4d9fcd312",name="EXT-INT-INTERNET"} 8.2307274e+07
+nsxt_logical_router_port_tx_total_byte{id="dd3e5c5c-21b2-411e-a7a7-2056d67380b9",logical_router_id="8c1ec55a-438a-49e7-9e46-3da597eb478b",name="infra-AVI-SE-MGMT-DHCP-dlrp"} 0
+nsxt_logical_router_port_tx_total_byte{id="f694be97-3b10-4d67-b3be-d54a311c24c1",logical_router_id="1427c1d9-a259-48fe-8b34-09bc972970e9",name="TO-INTERNET-a342d62c-c20b-4144-a15c-fe3dc00356c0-t1_lrp"} 462
+nsxt_logical_router_port_tx_total_byte{id="fcdd6a76-9369-472a-8a70-e03c447d70f8",logical_router_id="361952a9-68b3-43ed-a9fc-d1e4d9fcd312",name="TO-INTERNET-a342d62c-c20b-4144-a15c-fe3dc00356c0-t0_lrp"} 0
+# HELP nsxt_logical_router_port_tx_total_packet Total packets transmitted (rx) of logical router port
+# TYPE nsxt_logical_router_port_tx_total_packet gauge
+nsxt_logical_router_port_tx_total_packet{id="036aafa1-f8b1-485b-b80b-ac84aebfa45c",logical_router_id="9d79bcbd-87b2-48d0-9610-ffae43eac105",name="T0-GERENCIA-d4e09d81-8604-414a-9f76-1fa09e7bec6c-t1_lrp"} 0
+nsxt_logical_router_port_tx_total_packet{id="0592ff5e-ca3c-4da7-9467-b7c8288c722b",logical_router_id="9d79bcbd-87b2-48d0-9610-ffae43eac105",name="infra-fdc53018-e2d9-488d-85dc-7fa75e3750de-dlrp"} 16
+nsxt_logical_router_port_tx_total_packet{id="1d746401-1716-48d0-9ab6-af3ecc487fec",logical_router_id="8cb6d623-eebd-42b6-ad63-38379ced3a03",name="T0-VRF-T1-VRF-t0_lrp"} 0
+nsxt_logical_router_port_tx_total_packet{id="3a1ab833-3f62-4934-9378-bb4fbcb89198",logical_router_id="97d52c41-517e-45f7-983b-38dd29ef69a1",name="T0-GERENCIA-T1-GERENCIA-t1_lrp"} 0
+nsxt_logical_router_port_tx_total_packet{id="4ef430e9-2c29-4017-bd9e-6819a5a318be",logical_router_id="8c1ec55a-438a-49e7-9e46-3da597eb478b",name="T0-GERENCIA-T1-ALB-t1_lrp"} 0
+nsxt_logical_router_port_tx_total_packet{id="5be5733e-cfde-4def-99ec-eb4d1f27e69c",logical_router_id="e8994988-c21c-455c-a6c6-2bf9b759296d",name="T0-GERENCIA-5210b2fc-d2a3-4c87-a8be-d1559d09c451-t0_lrp"} 0
+nsxt_logical_router_port_tx_total_packet{id="6bf8b3f9-d1f9-40bf-b653-62730cce18d9",logical_router_id="b8f287c2-e053-464c-9bd0-0b1b2d0d2eb0",name="T0-GERENCIA-5210b2fc-d2a3-4c87-a8be-d1559d09c451-t1_lrp"} 0
+nsxt_logical_router_port_tx_total_packet{id="70488318-0ab5-477c-9f25-842217f84937",logical_router_id="e8994988-c21c-455c-a6c6-2bf9b759296d",name="T0-GERENCIA-T1-GERENCIA-t0_lrp"} 14
+nsxt_logical_router_port_tx_total_packet{id="79221b8a-6ad8-476f-8b02-2a070b6fb066",logical_router_id="e8994988-c21c-455c-a6c6-2bf9b759296d",name="T0-GERENCIA-T1-ALB-t0_lrp"} 14
+nsxt_logical_router_port_tx_total_packet{id="7a157072-274c-45cb-a5db-e68928cf875f",logical_router_id="b8f287c2-e053-464c-9bd0-0b1b2d0d2eb0",name="infra-a41a1cab-1a13-47df-bd2c-abcee9132b4e-dlrp"} 33772
+nsxt_logical_router_port_tx_total_packet{id="7a164589-1011-46d6-a5b4-6b346cb05cec",logical_router_id="1427c1d9-a259-48fe-8b34-09bc972970e9",name="infra-3c6b4283-cf3e-49f6-8851-14125ba3697d-dlrp"} 19
+nsxt_logical_router_port_tx_total_packet{id="83a0c99b-7d49-4847-a4f4-3e6e71df43c5",logical_router_id="e8994988-c21c-455c-a6c6-2bf9b759296d",name="T0-GERENCIA-d4e09d81-8604-414a-9f76-1fa09e7bec6c-t0_lrp"} 0
+nsxt_logical_router_port_tx_total_packet{id="8a060134-bd59-4bf3-a533-5df934d60933",logical_router_id="7678cb7e-2a10-4871-a945-85720fa344b9",name="EXT-INT-BACKUP"} 734487
+nsxt_logical_router_port_tx_total_packet{id="939594d8-fc1a-42c3-818e-13848d1e7fa7",logical_router_id="485c4456-adef-48fc-85ad-fcdacb9a6328",name="T0-VRF-T1-VRF-t1_lrp"} 0
+nsxt_logical_router_port_tx_total_packet{id="9d02ca10-a895-49e7-b796-5b96462f960e",logical_router_id="c61ad81c-fbd7-44c4-8011-92bbc5b0798c",name="infra-TESTE_OVERLAY-dlrp"} 0
+nsxt_logical_router_port_tx_total_packet{id="a8140bf5-08e7-4435-af36-90a6efe2506d",logical_router_id="8c1ec55a-438a-49e7-9e46-3da597eb478b",name="T1-ALB-dhcp-dlrp"} 0
+nsxt_logical_router_port_tx_total_packet{id="a84229da-4f98-407a-8624-64ad7e923c48",logical_router_id="e8994988-c21c-455c-a6c6-2bf9b759296d",name="EXT-INT-GERENCIA"} 1.626982e+06
+nsxt_logical_router_port_tx_total_packet{id="d6f59e3b-1cc5-4609-a7d7-ab69539a60b1",logical_router_id="361952a9-68b3-43ed-a9fc-d1e4d9fcd312",name="EXT-INT-INTERNET"} 1.134169e+06
+nsxt_logical_router_port_tx_total_packet{id="dd3e5c5c-21b2-411e-a7a7-2056d67380b9",logical_router_id="8c1ec55a-438a-49e7-9e46-3da597eb478b",name="infra-AVI-SE-MGMT-DHCP-dlrp"} 0
+nsxt_logical_router_port_tx_total_packet{id="f694be97-3b10-4d67-b3be-d54a311c24c1",logical_router_id="1427c1d9-a259-48fe-8b34-09bc972970e9",name="TO-INTERNET-a342d62c-c20b-4144-a15c-fe3dc00356c0-t1_lrp"} 11
+nsxt_logical_router_port_tx_total_packet{id="fcdd6a76-9369-472a-8a70-e03c447d70f8",logical_router_id="361952a9-68b3-43ed-a9fc-d1e4d9fcd312",name="TO-INTERNET-a342d62c-c20b-4144-a15c-fe3dc00356c0-t0_lrp"} 0
+# HELP nsxt_logical_router_status Status of logical router which includes high availability status associated with transport node
+# TYPE nsxt_logical_router_status gauge
+nsxt_logical_router_status{high_availability_status="ACTIVE",id="1427c1d9-a259-48fe-8b34-09bc972970e9",name="acme-edge-pub",service_router_id="1998c1b5-b9c9-4de7-994a-2769ec762bf3",transport_node_id="da30e83d-b3fd-4b0b-88a3-fd34b6768343"} 1
+nsxt_logical_router_status{high_availability_status="ACTIVE",id="361952a9-68b3-43ed-a9fc-d1e4d9fcd312",name="T0-INTERNET",service_router_id="6f54bee5-d6cb-4d59-920a-1e2f175db3de",transport_node_id="da30e83d-b3fd-4b0b-88a3-fd34b6768343"} 1
+nsxt_logical_router_status{high_availability_status="ACTIVE",id="485c4456-adef-48fc-85ad-fcdacb9a6328",name="T1-VRF",service_router_id="d01a653e-9fed-4522-b445-68b84af4013a",transport_node_id="61d2703c-dbbd-4d98-ae7f-2dbc20f437d1"} 0
+nsxt_logical_router_status{high_availability_status="ACTIVE",id="7678cb7e-2a10-4871-a945-85720fa344b9",name="T0-BACKUP",service_router_id="d81a3540-0361-4fb1-855e-9802c897d302",transport_node_id="a4c9cde9-fe8c-4eaa-99e5-b08aaa93b6af"} 1
+nsxt_logical_router_status{high_availability_status="ACTIVE",id="97d52c41-517e-45f7-983b-38dd29ef69a1",name="T1-GERENCIA",service_router_id="86d1fb2a-ecc3-4b87-929b-bc38c79a3f80",transport_node_id="61d2703c-dbbd-4d98-ae7f-2dbc20f437d1"} 0
+nsxt_logical_router_status{high_availability_status="ACTIVE",id="9d79bcbd-87b2-48d0-9610-ffae43eac105",name="acme-edge-mgr",service_router_id="79eaa128-61a4-40d2-9da2-e9ca72162f94",transport_node_id="61d2703c-dbbd-4d98-ae7f-2dbc20f437d1"} 0
+nsxt_logical_router_status{high_availability_status="ACTIVE",id="b8f287c2-e053-464c-9bd0-0b1b2d0d2eb0",name="acme-edge-web",service_router_id="42f3c773-413a-4954-9c49-697f81f5a413",transport_node_id="61d2703c-dbbd-4d98-ae7f-2dbc20f437d1"} 0
+nsxt_logical_router_status{high_availability_status="ACTIVE",id="e8994988-c21c-455c-a6c6-2bf9b759296d",name="T0-GERENCIA",service_router_id="fc9ffe0f-a351-44c8-9596-8bac98f9d89c",transport_node_id="61d2703c-dbbd-4d98-ae7f-2dbc20f437d1"} 0
+nsxt_logical_router_status{high_availability_status="STANDBY",id="1427c1d9-a259-48fe-8b34-09bc972970e9",name="acme-edge-pub",service_router_id="1998c1b5-b9c9-4de7-994a-2769ec762bf3",transport_node_id="da30e83d-b3fd-4b0b-88a3-fd34b6768343"} 0
+nsxt_logical_router_status{high_availability_status="STANDBY",id="361952a9-68b3-43ed-a9fc-d1e4d9fcd312",name="T0-INTERNET",service_router_id="6f54bee5-d6cb-4d59-920a-1e2f175db3de",transport_node_id="da30e83d-b3fd-4b0b-88a3-fd34b6768343"} 0
+nsxt_logical_router_status{high_availability_status="STANDBY",id="485c4456-adef-48fc-85ad-fcdacb9a6328",name="T1-VRF",service_router_id="d01a653e-9fed-4522-b445-68b84af4013a",transport_node_id="61d2703c-dbbd-4d98-ae7f-2dbc20f437d1"} 0
+nsxt_logical_router_status{high_availability_status="STANDBY",id="7678cb7e-2a10-4871-a945-85720fa344b9",name="T0-BACKUP",service_router_id="d81a3540-0361-4fb1-855e-9802c897d302",transport_node_id="a4c9cde9-fe8c-4eaa-99e5-b08aaa93b6af"} 0
+nsxt_logical_router_status{high_availability_status="STANDBY",id="97d52c41-517e-45f7-983b-38dd29ef69a1",name="T1-GERENCIA",service_router_id="86d1fb2a-ecc3-4b87-929b-bc38c79a3f80",transport_node_id="61d2703c-dbbd-4d98-ae7f-2dbc20f437d1"} 0
+nsxt_logical_router_status{high_availability_status="STANDBY",id="9d79bcbd-87b2-48d0-9610-ffae43eac105",name="acme-edge-mgr",service_router_id="79eaa128-61a4-40d2-9da2-e9ca72162f94",transport_node_id="61d2703c-dbbd-4d98-ae7f-2dbc20f437d1"} 0
+nsxt_logical_router_status{high_availability_status="STANDBY",id="b8f287c2-e053-464c-9bd0-0b1b2d0d2eb0",name="acme-edge-web",service_router_id="42f3c773-413a-4954-9c49-697f81f5a413",transport_node_id="61d2703c-dbbd-4d98-ae7f-2dbc20f437d1"} 0
+nsxt_logical_router_status{high_availability_status="STANDBY",id="e8994988-c21c-455c-a6c6-2bf9b759296d",name="T0-GERENCIA",service_router_id="fc9ffe0f-a351-44c8-9596-8bac98f9d89c",transport_node_id="61d2703c-dbbd-4d98-ae7f-2dbc20f437d1"} 0
+# HELP nsxt_logical_switch_rx_byte Total bytes received (rx) on logical switch
+# TYPE nsxt_logical_switch_rx_byte gauge
+nsxt_logical_switch_rx_byte{id="0e794c00-2ff2-470e-bdd7-bec5b385cbb7",name="GERENCIA",transport_zone_id="007ae5b1-63b8-4396-82d3-c79edc8cee3f"} 9.7618624e+07
+nsxt_logical_switch_rx_byte{id="341c0e3c-2420-4dbb-9425-55cad6ac04d8",name="AVI-SE-MGMT-DHCP",transport_zone_id="6df1b928-3590-4e8d-b7ba-282f8e4f1d7e"} 0
+nsxt_logical_switch_rx_byte{id="7159893b-9150-4b81-8fbf-58bd2f57a1e9",name="acme-web-network-6e5663e2-5037-45f4-a652-93caedb24f9f",transport_zone_id="6df1b928-3590-4e8d-b7ba-282f8e4f1d7e"} 1.5129614e+07
+nsxt_logical_switch_rx_byte{id="78c78fe3-6105-4ab3-8883-34fbc01068de",name="TESTE OVERLAY",transport_zone_id="6df1b928-3590-4e8d-b7ba-282f8e4f1d7e"} 0
+nsxt_logical_switch_rx_byte{id="9f0681a0-19cf-4903-8362-1825a25c80f1",name="acme-db-network-25e96cc6-09fa-4e51-b1c3-df449906eb00",transport_zone_id="6df1b928-3590-4e8d-b7ba-282f8e4f1d7e"} 1.6081675e+07
+nsxt_logical_switch_rx_byte{id="c9fcc576-8d14-40b9-ab9d-b79251288471",name="INTERNET",transport_zone_id="007ae5b1-63b8-4396-82d3-c79edc8cee3f"} 8.2307274e+07
+nsxt_logical_switch_rx_byte{id="e012d16b-29d0-499e-98b6-6e8aa5ba7e74",name="BACKUP",transport_zone_id="007ae5b1-63b8-4396-82d3-c79edc8cee3f"} 4.5307778e+07
+nsxt_logical_switch_rx_byte{id="ffc0c008-7007-4d13-9b4c-b35765016aa0",name="acme-pub-network-62e4d21b-2234-4025-a66e-e79fee34af91",transport_zone_id="6df1b928-3590-4e8d-b7ba-282f8e4f1d7e"} 1272
+# HELP nsxt_logical_switch_rx_dropped_byte Total receive (rx) bytes dropped on logical switch
+# TYPE nsxt_logical_switch_rx_dropped_byte gauge
+nsxt_logical_switch_rx_dropped_byte{id="0e794c00-2ff2-470e-bdd7-bec5b385cbb7",name="GERENCIA",transport_zone_id="007ae5b1-63b8-4396-82d3-c79edc8cee3f"} 0
+nsxt_logical_switch_rx_dropped_byte{id="341c0e3c-2420-4dbb-9425-55cad6ac04d8",name="AVI-SE-MGMT-DHCP",transport_zone_id="6df1b928-3590-4e8d-b7ba-282f8e4f1d7e"} 0
+nsxt_logical_switch_rx_dropped_byte{id="7159893b-9150-4b81-8fbf-58bd2f57a1e9",name="acme-web-network-6e5663e2-5037-45f4-a652-93caedb24f9f",transport_zone_id="6df1b928-3590-4e8d-b7ba-282f8e4f1d7e"} 0
+nsxt_logical_switch_rx_dropped_byte{id="78c78fe3-6105-4ab3-8883-34fbc01068de",name="TESTE OVERLAY",transport_zone_id="6df1b928-3590-4e8d-b7ba-282f8e4f1d7e"} 0
+nsxt_logical_switch_rx_dropped_byte{id="9f0681a0-19cf-4903-8362-1825a25c80f1",name="acme-db-network-25e96cc6-09fa-4e51-b1c3-df449906eb00",transport_zone_id="6df1b928-3590-4e8d-b7ba-282f8e4f1d7e"} 0
+nsxt_logical_switch_rx_dropped_byte{id="c9fcc576-8d14-40b9-ab9d-b79251288471",name="INTERNET",transport_zone_id="007ae5b1-63b8-4396-82d3-c79edc8cee3f"} 0
+nsxt_logical_switch_rx_dropped_byte{id="e012d16b-29d0-499e-98b6-6e8aa5ba7e74",name="BACKUP",transport_zone_id="007ae5b1-63b8-4396-82d3-c79edc8cee3f"} 0
+nsxt_logical_switch_rx_dropped_byte{id="ffc0c008-7007-4d13-9b4c-b35765016aa0",name="acme-pub-network-62e4d21b-2234-4025-a66e-e79fee34af91",transport_zone_id="6df1b928-3590-4e8d-b7ba-282f8e4f1d7e"} 0
+# HELP nsxt_logical_switch_rx_dropped_packet Total receive (rx) packets dropped on logical switch
+# TYPE nsxt_logical_switch_rx_dropped_packet gauge
+nsxt_logical_switch_rx_dropped_packet{id="0e794c00-2ff2-470e-bdd7-bec5b385cbb7",name="GERENCIA",transport_zone_id="007ae5b1-63b8-4396-82d3-c79edc8cee3f"} 0
+nsxt_logical_switch_rx_dropped_packet{id="341c0e3c-2420-4dbb-9425-55cad6ac04d8",name="AVI-SE-MGMT-DHCP",transport_zone_id="6df1b928-3590-4e8d-b7ba-282f8e4f1d7e"} 0
+nsxt_logical_switch_rx_dropped_packet{id="7159893b-9150-4b81-8fbf-58bd2f57a1e9",name="acme-web-network-6e5663e2-5037-45f4-a652-93caedb24f9f",transport_zone_id="6df1b928-3590-4e8d-b7ba-282f8e4f1d7e"} 12
+nsxt_logical_switch_rx_dropped_packet{id="78c78fe3-6105-4ab3-8883-34fbc01068de",name="TESTE OVERLAY",transport_zone_id="6df1b928-3590-4e8d-b7ba-282f8e4f1d7e"} 0
+nsxt_logical_switch_rx_dropped_packet{id="9f0681a0-19cf-4903-8362-1825a25c80f1",name="acme-db-network-25e96cc6-09fa-4e51-b1c3-df449906eb00",transport_zone_id="6df1b928-3590-4e8d-b7ba-282f8e4f1d7e"} 17
+nsxt_logical_switch_rx_dropped_packet{id="c9fcc576-8d14-40b9-ab9d-b79251288471",name="INTERNET",transport_zone_id="007ae5b1-63b8-4396-82d3-c79edc8cee3f"} 1
+nsxt_logical_switch_rx_dropped_packet{id="e012d16b-29d0-499e-98b6-6e8aa5ba7e74",name="BACKUP",transport_zone_id="007ae5b1-63b8-4396-82d3-c79edc8cee3f"} 0
+nsxt_logical_switch_rx_dropped_packet{id="ffc0c008-7007-4d13-9b4c-b35765016aa0",name="acme-pub-network-62e4d21b-2234-4025-a66e-e79fee34af91",transport_zone_id="6df1b928-3590-4e8d-b7ba-282f8e4f1d7e"} 0
+# HELP nsxt_logical_switch_rx_packet Total packets received (rx) on logical switch
+# TYPE nsxt_logical_switch_rx_packet gauge
+nsxt_logical_switch_rx_packet{id="0e794c00-2ff2-470e-bdd7-bec5b385cbb7",name="GERENCIA",transport_zone_id="007ae5b1-63b8-4396-82d3-c79edc8cee3f"} 1.626982e+06
+nsxt_logical_switch_rx_packet{id="341c0e3c-2420-4dbb-9425-55cad6ac04d8",name="AVI-SE-MGMT-DHCP",transport_zone_id="6df1b928-3590-4e8d-b7ba-282f8e4f1d7e"} 0
+nsxt_logical_switch_rx_packet{id="7159893b-9150-4b81-8fbf-58bd2f57a1e9",name="acme-web-network-6e5663e2-5037-45f4-a652-93caedb24f9f",transport_zone_id="6df1b928-3590-4e8d-b7ba-282f8e4f1d7e"} 165499
+nsxt_logical_switch_rx_packet{id="78c78fe3-6105-4ab3-8883-34fbc01068de",name="TESTE OVERLAY",transport_zone_id="6df1b928-3590-4e8d-b7ba-282f8e4f1d7e"} 0
+nsxt_logical_switch_rx_packet{id="9f0681a0-19cf-4903-8362-1825a25c80f1",name="acme-db-network-25e96cc6-09fa-4e51-b1c3-df449906eb00",transport_zone_id="6df1b928-3590-4e8d-b7ba-282f8e4f1d7e"} 106190
+nsxt_logical_switch_rx_packet{id="c9fcc576-8d14-40b9-ab9d-b79251288471",name="INTERNET",transport_zone_id="007ae5b1-63b8-4396-82d3-c79edc8cee3f"} 1.134169e+06
+nsxt_logical_switch_rx_packet{id="e012d16b-29d0-499e-98b6-6e8aa5ba7e74",name="BACKUP",transport_zone_id="007ae5b1-63b8-4396-82d3-c79edc8cee3f"} 734487
+nsxt_logical_switch_rx_packet{id="ffc0c008-7007-4d13-9b4c-b35765016aa0",name="acme-pub-network-62e4d21b-2234-4025-a66e-e79fee34af91",transport_zone_id="6df1b928-3590-4e8d-b7ba-282f8e4f1d7e"} 19
+# HELP nsxt_logical_switch_status Status of logical switch
+# TYPE nsxt_logical_switch_status gauge
+nsxt_logical_switch_status{id="0e794c00-2ff2-470e-bdd7-bec5b385cbb7",name="GERENCIA",status="FAILED",transport_zone_id="007ae5b1-63b8-4396-82d3-c79edc8cee3f"} 0
+nsxt_logical_switch_status{id="0e794c00-2ff2-470e-bdd7-bec5b385cbb7",name="GERENCIA",status="IN_PROGRESS",transport_zone_id="007ae5b1-63b8-4396-82d3-c79edc8cee3f"} 0
+nsxt_logical_switch_status{id="0e794c00-2ff2-470e-bdd7-bec5b385cbb7",name="GERENCIA",status="ORPHANED",transport_zone_id="007ae5b1-63b8-4396-82d3-c79edc8cee3f"} 0
+nsxt_logical_switch_status{id="0e794c00-2ff2-470e-bdd7-bec5b385cbb7",name="GERENCIA",status="PARTIAL_SUCCESS",transport_zone_id="007ae5b1-63b8-4396-82d3-c79edc8cee3f"} 0
+nsxt_logical_switch_status{id="0e794c00-2ff2-470e-bdd7-bec5b385cbb7",name="GERENCIA",status="PENDING",transport_zone_id="007ae5b1-63b8-4396-82d3-c79edc8cee3f"} 0
+nsxt_logical_switch_status{id="0e794c00-2ff2-470e-bdd7-bec5b385cbb7",name="GERENCIA",status="SUCCESS",transport_zone_id="007ae5b1-63b8-4396-82d3-c79edc8cee3f"} 1
+nsxt_logical_switch_status{id="341c0e3c-2420-4dbb-9425-55cad6ac04d8",name="AVI-SE-MGMT-DHCP",status="FAILED",transport_zone_id="6df1b928-3590-4e8d-b7ba-282f8e4f1d7e"} 0
+nsxt_logical_switch_status{id="341c0e3c-2420-4dbb-9425-55cad6ac04d8",name="AVI-SE-MGMT-DHCP",status="IN_PROGRESS",transport_zone_id="6df1b928-3590-4e8d-b7ba-282f8e4f1d7e"} 0
+nsxt_logical_switch_status{id="341c0e3c-2420-4dbb-9425-55cad6ac04d8",name="AVI-SE-MGMT-DHCP",status="ORPHANED",transport_zone_id="6df1b928-3590-4e8d-b7ba-282f8e4f1d7e"} 0
+nsxt_logical_switch_status{id="341c0e3c-2420-4dbb-9425-55cad6ac04d8",name="AVI-SE-MGMT-DHCP",status="PARTIAL_SUCCESS",transport_zone_id="6df1b928-3590-4e8d-b7ba-282f8e4f1d7e"} 0
+nsxt_logical_switch_status{id="341c0e3c-2420-4dbb-9425-55cad6ac04d8",name="AVI-SE-MGMT-DHCP",status="PENDING",transport_zone_id="6df1b928-3590-4e8d-b7ba-282f8e4f1d7e"} 0
+nsxt_logical_switch_status{id="341c0e3c-2420-4dbb-9425-55cad6ac04d8",name="AVI-SE-MGMT-DHCP",status="SUCCESS",transport_zone_id="6df1b928-3590-4e8d-b7ba-282f8e4f1d7e"} 1
+nsxt_logical_switch_status{id="7159893b-9150-4b81-8fbf-58bd2f57a1e9",name="acme-web-network-6e5663e2-5037-45f4-a652-93caedb24f9f",status="FAILED",transport_zone_id="6df1b928-3590-4e8d-b7ba-282f8e4f1d7e"} 0
+nsxt_logical_switch_status{id="7159893b-9150-4b81-8fbf-58bd2f57a1e9",name="acme-web-network-6e5663e2-5037-45f4-a652-93caedb24f9f",status="IN_PROGRESS",transport_zone_id="6df1b928-3590-4e8d-b7ba-282f8e4f1d7e"} 0
+nsxt_logical_switch_status{id="7159893b-9150-4b81-8fbf-58bd2f57a1e9",name="acme-web-network-6e5663e2-5037-45f4-a652-93caedb24f9f",status="ORPHANED",transport_zone_id="6df1b928-3590-4e8d-b7ba-282f8e4f1d7e"} 0
+nsxt_logical_switch_status{id="7159893b-9150-4b81-8fbf-58bd2f57a1e9",name="acme-web-network-6e5663e2-5037-45f4-a652-93caedb24f9f",status="PARTIAL_SUCCESS",transport_zone_id="6df1b928-3590-4e8d-b7ba-282f8e4f1d7e"} 0
+nsxt_logical_switch_status{id="7159893b-9150-4b81-8fbf-58bd2f57a1e9",name="acme-web-network-6e5663e2-5037-45f4-a652-93caedb24f9f",status="PENDING",transport_zone_id="6df1b928-3590-4e8d-b7ba-282f8e4f1d7e"} 0
+nsxt_logical_switch_status{id="7159893b-9150-4b81-8fbf-58bd2f57a1e9",name="acme-web-network-6e5663e2-5037-45f4-a652-93caedb24f9f",status="SUCCESS",transport_zone_id="6df1b928-3590-4e8d-b7ba-282f8e4f1d7e"} 1
+nsxt_logical_switch_status{id="78c78fe3-6105-4ab3-8883-34fbc01068de",name="TESTE OVERLAY",status="FAILED",transport_zone_id="6df1b928-3590-4e8d-b7ba-282f8e4f1d7e"} 0
+nsxt_logical_switch_status{id="78c78fe3-6105-4ab3-8883-34fbc01068de",name="TESTE OVERLAY",status="IN_PROGRESS",transport_zone_id="6df1b928-3590-4e8d-b7ba-282f8e4f1d7e"} 0
+nsxt_logical_switch_status{id="78c78fe3-6105-4ab3-8883-34fbc01068de",name="TESTE OVERLAY",status="ORPHANED",transport_zone_id="6df1b928-3590-4e8d-b7ba-282f8e4f1d7e"} 0
+nsxt_logical_switch_status{id="78c78fe3-6105-4ab3-8883-34fbc01068de",name="TESTE OVERLAY",status="PARTIAL_SUCCESS",transport_zone_id="6df1b928-3590-4e8d-b7ba-282f8e4f1d7e"} 0
+nsxt_logical_switch_status{id="78c78fe3-6105-4ab3-8883-34fbc01068de",name="TESTE OVERLAY",status="PENDING",transport_zone_id="6df1b928-3590-4e8d-b7ba-282f8e4f1d7e"} 0
+nsxt_logical_switch_status{id="78c78fe3-6105-4ab3-8883-34fbc01068de",name="TESTE OVERLAY",status="SUCCESS",transport_zone_id="6df1b928-3590-4e8d-b7ba-282f8e4f1d7e"} 1
+nsxt_logical_switch_status{id="9f0681a0-19cf-4903-8362-1825a25c80f1",name="acme-db-network-25e96cc6-09fa-4e51-b1c3-df449906eb00",status="FAILED",transport_zone_id="6df1b928-3590-4e8d-b7ba-282f8e4f1d7e"} 0
+nsxt_logical_switch_status{id="9f0681a0-19cf-4903-8362-1825a25c80f1",name="acme-db-network-25e96cc6-09fa-4e51-b1c3-df449906eb00",status="IN_PROGRESS",transport_zone_id="6df1b928-3590-4e8d-b7ba-282f8e4f1d7e"} 0
+nsxt_logical_switch_status{id="9f0681a0-19cf-4903-8362-1825a25c80f1",name="acme-db-network-25e96cc6-09fa-4e51-b1c3-df449906eb00",status="ORPHANED",transport_zone_id="6df1b928-3590-4e8d-b7ba-282f8e4f1d7e"} 0
+nsxt_logical_switch_status{id="9f0681a0-19cf-4903-8362-1825a25c80f1",name="acme-db-network-25e96cc6-09fa-4e51-b1c3-df449906eb00",status="PARTIAL_SUCCESS",transport_zone_id="6df1b928-3590-4e8d-b7ba-282f8e4f1d7e"} 0
+nsxt_logical_switch_status{id="9f0681a0-19cf-4903-8362-1825a25c80f1",name="acme-db-network-25e96cc6-09fa-4e51-b1c3-df449906eb00",status="PENDING",transport_zone_id="6df1b928-3590-4e8d-b7ba-282f8e4f1d7e"} 0
+nsxt_logical_switch_status{id="9f0681a0-19cf-4903-8362-1825a25c80f1",name="acme-db-network-25e96cc6-09fa-4e51-b1c3-df449906eb00",status="SUCCESS",transport_zone_id="6df1b928-3590-4e8d-b7ba-282f8e4f1d7e"} 1
+nsxt_logical_switch_status{id="c9fcc576-8d14-40b9-ab9d-b79251288471",name="INTERNET",status="FAILED",transport_zone_id="007ae5b1-63b8-4396-82d3-c79edc8cee3f"} 0
+nsxt_logical_switch_status{id="c9fcc576-8d14-40b9-ab9d-b79251288471",name="INTERNET",status="IN_PROGRESS",transport_zone_id="007ae5b1-63b8-4396-82d3-c79edc8cee3f"} 0
+nsxt_logical_switch_status{id="c9fcc576-8d14-40b9-ab9d-b79251288471",name="INTERNET",status="ORPHANED",transport_zone_id="007ae5b1-63b8-4396-82d3-c79edc8cee3f"} 0
+nsxt_logical_switch_status{id="c9fcc576-8d14-40b9-ab9d-b79251288471",name="INTERNET",status="PARTIAL_SUCCESS",transport_zone_id="007ae5b1-63b8-4396-82d3-c79edc8cee3f"} 0
+nsxt_logical_switch_status{id="c9fcc576-8d14-40b9-ab9d-b79251288471",name="INTERNET",status="PENDING",transport_zone_id="007ae5b1-63b8-4396-82d3-c79edc8cee3f"} 0
+nsxt_logical_switch_status{id="c9fcc576-8d14-40b9-ab9d-b79251288471",name="INTERNET",status="SUCCESS",transport_zone_id="007ae5b1-63b8-4396-82d3-c79edc8cee3f"} 1
+nsxt_logical_switch_status{id="e012d16b-29d0-499e-98b6-6e8aa5ba7e74",name="BACKUP",status="FAILED",transport_zone_id="007ae5b1-63b8-4396-82d3-c79edc8cee3f"} 0
+nsxt_logical_switch_status{id="e012d16b-29d0-499e-98b6-6e8aa5ba7e74",name="BACKUP",status="IN_PROGRESS",transport_zone_id="007ae5b1-63b8-4396-82d3-c79edc8cee3f"} 0
+nsxt_logical_switch_status{id="e012d16b-29d0-499e-98b6-6e8aa5ba7e74",name="BACKUP",status="ORPHANED",transport_zone_id="007ae5b1-63b8-4396-82d3-c79edc8cee3f"} 0
+nsxt_logical_switch_status{id="e012d16b-29d0-499e-98b6-6e8aa5ba7e74",name="BACKUP",status="PARTIAL_SUCCESS",transport_zone_id="007ae5b1-63b8-4396-82d3-c79edc8cee3f"} 0
+nsxt_logical_switch_status{id="e012d16b-29d0-499e-98b6-6e8aa5ba7e74",name="BACKUP",status="PENDING",transport_zone_id="007ae5b1-63b8-4396-82d3-c79edc8cee3f"} 0
+nsxt_logical_switch_status{id="e012d16b-29d0-499e-98b6-6e8aa5ba7e74",name="BACKUP",status="SUCCESS",transport_zone_id="007ae5b1-63b8-4396-82d3-c79edc8cee3f"} 1
+nsxt_logical_switch_status{id="ffc0c008-7007-4d13-9b4c-b35765016aa0",name="acme-pub-network-62e4d21b-2234-4025-a66e-e79fee34af91",status="FAILED",transport_zone_id="6df1b928-3590-4e8d-b7ba-282f8e4f1d7e"} 0
+nsxt_logical_switch_status{id="ffc0c008-7007-4d13-9b4c-b35765016aa0",name="acme-pub-network-62e4d21b-2234-4025-a66e-e79fee34af91",status="IN_PROGRESS",transport_zone_id="6df1b928-3590-4e8d-b7ba-282f8e4f1d7e"} 0
+nsxt_logical_switch_status{id="ffc0c008-7007-4d13-9b4c-b35765016aa0",name="acme-pub-network-62e4d21b-2234-4025-a66e-e79fee34af91",status="ORPHANED",transport_zone_id="6df1b928-3590-4e8d-b7ba-282f8e4f1d7e"} 0
+nsxt_logical_switch_status{id="ffc0c008-7007-4d13-9b4c-b35765016aa0",name="acme-pub-network-62e4d21b-2234-4025-a66e-e79fee34af91",status="PARTIAL_SUCCESS",transport_zone_id="6df1b928-3590-4e8d-b7ba-282f8e4f1d7e"} 0
+nsxt_logical_switch_status{id="ffc0c008-7007-4d13-9b4c-b35765016aa0",name="acme-pub-network-62e4d21b-2234-4025-a66e-e79fee34af91",status="PENDING",transport_zone_id="6df1b928-3590-4e8d-b7ba-282f8e4f1d7e"} 0
+nsxt_logical_switch_status{id="ffc0c008-7007-4d13-9b4c-b35765016aa0",name="acme-pub-network-62e4d21b-2234-4025-a66e-e79fee34af91",status="SUCCESS",transport_zone_id="6df1b928-3590-4e8d-b7ba-282f8e4f1d7e"} 1
+# HELP nsxt_logical_switch_tx_byte Total bytes transmitted (tx) on logical switch
+# TYPE nsxt_logical_switch_tx_byte gauge
+nsxt_logical_switch_tx_byte{id="0e794c00-2ff2-470e-bdd7-bec5b385cbb7",name="GERENCIA",transport_zone_id="007ae5b1-63b8-4396-82d3-c79edc8cee3f"} 5.21018592e+08
+nsxt_logical_switch_tx_byte{id="341c0e3c-2420-4dbb-9425-55cad6ac04d8",name="AVI-SE-MGMT-DHCP",transport_zone_id="6df1b928-3590-4e8d-b7ba-282f8e4f1d7e"} 0
+nsxt_logical_switch_tx_byte{id="7159893b-9150-4b81-8fbf-58bd2f57a1e9",name="acme-web-network-6e5663e2-5037-45f4-a652-93caedb24f9f",transport_zone_id="6df1b928-3590-4e8d-b7ba-282f8e4f1d7e"} 2.1987722e+07
+nsxt_logical_switch_tx_byte{id="78c78fe3-6105-4ab3-8883-34fbc01068de",name="TESTE OVERLAY",transport_zone_id="6df1b928-3590-4e8d-b7ba-282f8e4f1d7e"} 0
+nsxt_logical_switch_tx_byte{id="9f0681a0-19cf-4903-8362-1825a25c80f1",name="acme-db-network-25e96cc6-09fa-4e51-b1c3-df449906eb00",transport_zone_id="6df1b928-3590-4e8d-b7ba-282f8e4f1d7e"} 3.3142839e+07
+nsxt_logical_switch_tx_byte{id="c9fcc576-8d14-40b9-ab9d-b79251288471",name="INTERNET",transport_zone_id="007ae5b1-63b8-4396-82d3-c79edc8cee3f"} 5.8782714e+08
+nsxt_logical_switch_tx_byte{id="e012d16b-29d0-499e-98b6-6e8aa5ba7e74",name="BACKUP",transport_zone_id="007ae5b1-63b8-4396-82d3-c79edc8cee3f"} 5.066919e+08
+nsxt_logical_switch_tx_byte{id="ffc0c008-7007-4d13-9b4c-b35765016aa0",name="acme-pub-network-62e4d21b-2234-4025-a66e-e79fee34af91",transport_zone_id="6df1b928-3590-4e8d-b7ba-282f8e4f1d7e"} 220799
+# HELP nsxt_logical_switch_tx_dropped_byte Total transmit (tx) bytes dropped on logical switch
+# TYPE nsxt_logical_switch_tx_dropped_byte gauge
+nsxt_logical_switch_tx_dropped_byte{id="0e794c00-2ff2-470e-bdd7-bec5b385cbb7",name="GERENCIA",transport_zone_id="007ae5b1-63b8-4396-82d3-c79edc8cee3f"} 0
+nsxt_logical_switch_tx_dropped_byte{id="341c0e3c-2420-4dbb-9425-55cad6ac04d8",name="AVI-SE-MGMT-DHCP",transport_zone_id="6df1b928-3590-4e8d-b7ba-282f8e4f1d7e"} 0
+nsxt_logical_switch_tx_dropped_byte{id="7159893b-9150-4b81-8fbf-58bd2f57a1e9",name="acme-web-network-6e5663e2-5037-45f4-a652-93caedb24f9f",transport_zone_id="6df1b928-3590-4e8d-b7ba-282f8e4f1d7e"} 0
+nsxt_logical_switch_tx_dropped_byte{id="78c78fe3-6105-4ab3-8883-34fbc01068de",name="TESTE OVERLAY",transport_zone_id="6df1b928-3590-4e8d-b7ba-282f8e4f1d7e"} 0
+nsxt_logical_switch_tx_dropped_byte{id="9f0681a0-19cf-4903-8362-1825a25c80f1",name="acme-db-network-25e96cc6-09fa-4e51-b1c3-df449906eb00",transport_zone_id="6df1b928-3590-4e8d-b7ba-282f8e4f1d7e"} 0
+nsxt_logical_switch_tx_dropped_byte{id="c9fcc576-8d14-40b9-ab9d-b79251288471",name="INTERNET",transport_zone_id="007ae5b1-63b8-4396-82d3-c79edc8cee3f"} 0
+nsxt_logical_switch_tx_dropped_byte{id="e012d16b-29d0-499e-98b6-6e8aa5ba7e74",name="BACKUP",transport_zone_id="007ae5b1-63b8-4396-82d3-c79edc8cee3f"} 0
+nsxt_logical_switch_tx_dropped_byte{id="ffc0c008-7007-4d13-9b4c-b35765016aa0",name="acme-pub-network-62e4d21b-2234-4025-a66e-e79fee34af91",transport_zone_id="6df1b928-3590-4e8d-b7ba-282f8e4f1d7e"} 0
+# HELP nsxt_logical_switch_tx_dropped_packet Total transmit (tx) packets dropped on logical switch
+# TYPE nsxt_logical_switch_tx_dropped_packet gauge
+nsxt_logical_switch_tx_dropped_packet{id="0e794c00-2ff2-470e-bdd7-bec5b385cbb7",name="GERENCIA",transport_zone_id="007ae5b1-63b8-4396-82d3-c79edc8cee3f"} 0
+nsxt_logical_switch_tx_dropped_packet{id="341c0e3c-2420-4dbb-9425-55cad6ac04d8",name="AVI-SE-MGMT-DHCP",transport_zone_id="6df1b928-3590-4e8d-b7ba-282f8e4f1d7e"} 0
+nsxt_logical_switch_tx_dropped_packet{id="7159893b-9150-4b81-8fbf-58bd2f57a1e9",name="acme-web-network-6e5663e2-5037-45f4-a652-93caedb24f9f",transport_zone_id="6df1b928-3590-4e8d-b7ba-282f8e4f1d7e"} 0
+nsxt_logical_switch_tx_dropped_packet{id="78c78fe3-6105-4ab3-8883-34fbc01068de",name="TESTE OVERLAY",transport_zone_id="6df1b928-3590-4e8d-b7ba-282f8e4f1d7e"} 0
+nsxt_logical_switch_tx_dropped_packet{id="9f0681a0-19cf-4903-8362-1825a25c80f1",name="acme-db-network-25e96cc6-09fa-4e51-b1c3-df449906eb00",transport_zone_id="6df1b928-3590-4e8d-b7ba-282f8e4f1d7e"} 0
+nsxt_logical_switch_tx_dropped_packet{id="c9fcc576-8d14-40b9-ab9d-b79251288471",name="INTERNET",transport_zone_id="007ae5b1-63b8-4396-82d3-c79edc8cee3f"} 794223
+nsxt_logical_switch_tx_dropped_packet{id="e012d16b-29d0-499e-98b6-6e8aa5ba7e74",name="BACKUP",transport_zone_id="007ae5b1-63b8-4396-82d3-c79edc8cee3f"} 5
+nsxt_logical_switch_tx_dropped_packet{id="ffc0c008-7007-4d13-9b4c-b35765016aa0",name="acme-pub-network-62e4d21b-2234-4025-a66e-e79fee34af91",transport_zone_id="6df1b928-3590-4e8d-b7ba-282f8e4f1d7e"} 0
+# HELP nsxt_logical_switch_tx_packet Total packets transmitted (tx) on logical switch
+# TYPE nsxt_logical_switch_tx_packet gauge
+nsxt_logical_switch_tx_packet{id="0e794c00-2ff2-470e-bdd7-bec5b385cbb7",name="GERENCIA",transport_zone_id="007ae5b1-63b8-4396-82d3-c79edc8cee3f"} 7.705128e+06
+nsxt_logical_switch_tx_packet{id="341c0e3c-2420-4dbb-9425-55cad6ac04d8",name="AVI-SE-MGMT-DHCP",transport_zone_id="6df1b928-3590-4e8d-b7ba-282f8e4f1d7e"} 0
+nsxt_logical_switch_tx_packet{id="7159893b-9150-4b81-8fbf-58bd2f57a1e9",name="acme-web-network-6e5663e2-5037-45f4-a652-93caedb24f9f",transport_zone_id="6df1b928-3590-4e8d-b7ba-282f8e4f1d7e"} 282161
+nsxt_logical_switch_tx_packet{id="78c78fe3-6105-4ab3-8883-34fbc01068de",name="TESTE OVERLAY",transport_zone_id="6df1b928-3590-4e8d-b7ba-282f8e4f1d7e"} 0
+nsxt_logical_switch_tx_packet{id="9f0681a0-19cf-4903-8362-1825a25c80f1",name="acme-db-network-25e96cc6-09fa-4e51-b1c3-df449906eb00",transport_zone_id="6df1b928-3590-4e8d-b7ba-282f8e4f1d7e"} 194344
+nsxt_logical_switch_tx_packet{id="c9fcc576-8d14-40b9-ab9d-b79251288471",name="INTERNET",transport_zone_id="007ae5b1-63b8-4396-82d3-c79edc8cee3f"} 9.069242e+06
+nsxt_logical_switch_tx_packet{id="e012d16b-29d0-499e-98b6-6e8aa5ba7e74",name="BACKUP",transport_zone_id="007ae5b1-63b8-4396-82d3-c79edc8cee3f"} 7.947257e+06
+nsxt_logical_switch_tx_packet{id="ffc0c008-7007-4d13-9b4c-b35765016aa0",name="acme-pub-network-62e4d21b-2234-4025-a66e-e79fee34af91",transport_zone_id="6df1b928-3590-4e8d-b7ba-282f8e4f1d7e"} 1400
+# HELP nsxt_system_service_status Status of NSX-T system service
+# TYPE nsxt_system_service_status gauge
+nsxt_system_service_status{name="appliance",status="RUNNING"} 1
+nsxt_system_service_status{name="appliance",status="STOPPED"} 0
+nsxt_system_service_status{name="message_bus",status="RUNNING"} 0
+nsxt_system_service_status{name="message_bus",status="STOPPED"} 1
+nsxt_system_service_status{name="ntp",status="RUNNING"} 0
+nsxt_system_service_status{name="ntp",status="STOPPED"} 1
+nsxt_system_service_status{name="proton",status="RUNNING"} 1
+nsxt_system_service_status{name="proton",status="STOPPED"} 0
+nsxt_system_service_status{name="proxy",status="RUNNING"} 1
+nsxt_system_service_status{name="proxy",status="STOPPED"} 0
+nsxt_system_service_status{name="rabbitmq",status="RUNNING"} 1
+nsxt_system_service_status{name="rabbitmq",status="STOPPED"} 0
+nsxt_system_service_status{name="search",status="RUNNING"} 1
+nsxt_system_service_status{name="search",status="STOPPED"} 0
+nsxt_system_service_status{name="snmp",status="RUNNING"} 0
+nsxt_system_service_status{name="snmp",status="STOPPED"} 1
+nsxt_system_service_status{name="ssh",status="RUNNING"} 0
+nsxt_system_service_status{name="ssh",status="STOPPED"} 1
+nsxt_system_service_status{name="syslog",status="RUNNING"} 1
+nsxt_system_service_status{name="syslog",status="STOPPED"} 0
+nsxt_system_service_status{name="upgrade_agent",status="RUNNING"} 1
+nsxt_system_service_status{name="upgrade_agent",status="STOPPED"} 0
+# HELP nsxt_transport_node_edge_cluster_membership Membership info of Transport Node in an Edge Cluster
+# TYPE nsxt_transport_node_edge_cluster_membership gauge
+nsxt_transport_node_edge_cluster_membership{edge_cluster_id="1366f00c-bd6e-4324-a54f-9fabcd3207a4",edge_member_index="0",id="a4c9cde9-fe8c-4eaa-99e5-b08aaa93b6af"} 1
+nsxt_transport_node_edge_cluster_membership{edge_cluster_id="74202efa-f351-4f14-b695-1cab2aa8502e",edge_member_index="0",id="61d2703c-dbbd-4d98-ae7f-2dbc20f437d1"} 1
+nsxt_transport_node_edge_cluster_membership{edge_cluster_id="ff6fb881-1e94-4b61-9c06-630a3bb79b1d",edge_member_index="0",id="da30e83d-b3fd-4b0b-88a3-fd34b6768343"} 1
+# HELP process_cpu_seconds_total Total user and system CPU time spent in seconds.
+# TYPE process_cpu_seconds_total counter
+process_cpu_seconds_total 0.53
+# HELP process_max_fds Maximum number of open file descriptors.
+# TYPE process_max_fds gauge
+process_max_fds 1024
+# HELP process_open_fds Number of open file descriptors.
+# TYPE process_open_fds gauge
+process_open_fds 16
+# HELP process_resident_memory_bytes Resident memory size in bytes.
+# TYPE process_resident_memory_bytes gauge
+process_resident_memory_bytes 1.7072128e+07
+# HELP process_start_time_seconds Start time of the process since unix epoch in seconds.
+# TYPE process_start_time_seconds gauge
+process_start_time_seconds 1.65608382693e+09
+# HELP process_virtual_memory_bytes Virtual memory size in bytes.
+# TYPE process_virtual_memory_bytes gauge
+process_virtual_memory_bytes 1.23584512e+08
+# HELP process_virtual_memory_max_bytes Maximum amount of virtual memory available in bytes.
+# TYPE process_virtual_memory_max_bytes gauge
+process_virtual_memory_max_bytes -1
+# HELP promhttp_metric_handler_requests_in_flight Current number of scrapes being served.
+# TYPE promhttp_metric_handler_requests_in_flight gauge
+promhttp_metric_handler_requests_in_flight 1
+# HELP promhttp_metric_handler_requests_total Total number of scrapes by HTTP status code.
+# TYPE promhttp_metric_handler_requests_total counter
+promhttp_metric_handler_requests_total{code="200"} 1
+promhttp_metric_handler_requests_total{code="500"} 0
+promhttp_metric_handler_requests_total{code="503"} 0
