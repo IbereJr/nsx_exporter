@@ -1,9 +1,22 @@
+#Build
+FROM golang:1.16-buster AS build
+WORKDIR /app
+
+COPY go.mod ./
+COPY go.sum ./
+COPY client ./
+COPY collector ./
+
+RUN go mod download
+COPY *.go ./
+
+RUN go build -o /nsx-exporter
+
+#Deploy
 FROM quay.io/prometheus/busybox:latest
 LABEL maintainer="ibere.tizio@tivit.com"
 
-ARG ARCH="amd64"
-ARG OS="linux"
-COPY .build/${OS}-${ARCH}/nsxt_exporter /bin/nsxt_exporter
+COPY --from=build /nsx-exporter /bin/nsx_exporter
 
 EXPOSE      9744
 USER        nobody
