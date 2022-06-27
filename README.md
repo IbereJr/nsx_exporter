@@ -17,7 +17,7 @@ Help on flags:
 
 ## Usage
 
-Specify host URI for the NSX API using the `--host` flag. 
+Specify host URI for the NSX API using the `--host` flag.
 Add the credentials as well by using `--username` and `--password` flags:
 ```bash
 ./nsxt_exporter --host localhost --username user --password password
