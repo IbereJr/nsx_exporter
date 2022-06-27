@@ -8,7 +8,8 @@ COPY client ./
 COPY collector ./
 
 ENV GOROOT /app
-RUN go mod download
+#RUN go mod download
+RUN go mod tidy
 
 COPY *.go ./
 
