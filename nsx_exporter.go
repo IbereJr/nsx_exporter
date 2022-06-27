@@ -42,7 +42,6 @@ func newNSXTClient(opts nsxtOpts) (*nsxt.APIClient, error) {
 		Password:           opts.password,
 		Insecure:           opts.insecure,
 	}
-        fmt.Println("%T", cfg)
 	return nsxt.NewAPIClient(&cfg)
 }
 
