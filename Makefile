@@ -11,7 +11,7 @@ DOCKER_IMAGE_NAME?=nsx-exporter
 DOCKER_IMAGE_TAG?=$(shell git rev-parse --short HEAD)
 DOCKERFILE_PATH?=./Dockerfile
 DOCKERBUILD_CONTEXT?=./
-DOCKER_REPO?=cloudnativeid
+DOCKER_REPO?=IbereJr
 DOCKER_ARCHS?=amd64
 
 BUILD_DOCKER_ARCHS = $(addprefix docker-,$(DOCKER_ARCHS))
