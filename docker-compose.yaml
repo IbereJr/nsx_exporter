@@ -3,10 +3,10 @@ version: "2"
 services:
   nsx-exporter:
     expose:
-      - 9191
+      - 9744
     ports:
-      - 9191:9191
-    image: nsx-exporter:latest 
+      - 9744:9744
+    image: iberejr/nsx_exporter:master 
     environment:
       - NSX_HOST=10.1.255.39
       - NSX_USERNAME=tools
